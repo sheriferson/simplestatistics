@@ -1,4 +1,12 @@
 import math
+import sys
+
+# Are you trying to use python3?
+# if yes, reduce is now in functools
+# ref: http://stackoverflow.com/questions/8689184/python-name-reduce-is-not-defined
+if sys.version_info >= (3,0):
+    from functools import reduce
+
 
 """
 >>> mean([1])
