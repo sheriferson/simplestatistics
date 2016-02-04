@@ -40,10 +40,12 @@ def geometric_mean(x):
 # is the sum of squared deviations from the mean
 def variance(data):
     """
+    >>> variance([1]) # variance of one value is not defined
+    >>> variance([4]) # variance of one value is not defined
     >>> variance([1, 2, 3, 4, 5, 6])
-    2.9166666666666665
-    >>> variance([1])
-    0.0
+    3.5
+    >>> variance([-2, -1, 0, 1, 2])
+    2.5
     """
     m = mean(data)
     return mean([pow(x - m, 2) for x in data]);
