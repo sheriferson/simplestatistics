@@ -8,15 +8,16 @@ if sys.version_info >= (3,0):
     from functools import reduce
 
 
-"""
->>> mean([1])
-1.0
->>> mean([1, 2])
-1.5
->>> mean([1, 2, 3])
-2.0
-"""
-mean = lambda data: sum(data) / float(len(data))
+def mean(data):
+    """
+    >>> mean([1])
+    1.0
+    >>> mean([1, 2])
+    1.5
+    >>> mean([1, 2, 3])
+    2.0
+    """
+    return sum(data) / float(len(data))
 
 # geometric mean
 #
@@ -50,7 +51,14 @@ def variance(data):
     m = mean(data)
     return mean([pow(x - m, 2) for x in data]);
 
-standard_deviation = lambda data: math.sqrt(variance(data))
+def standard_deviation(data):
+    """
+    >>> standard_deviation([1, 2, 3])
+    1.0
+    >>> standard_deviation([1, 2, 3, 4])
+    1.290994
+    """
+    return math.sqrt(variance(data))
 
 # [t-test](http://en.wikipedia.org/wiki/Student's_t-test)
 #
