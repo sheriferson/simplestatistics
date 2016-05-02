@@ -1,3 +1,7 @@
+# I need sane division that returns a float not int
+from __future__ import division
+
+from decimal import *
 import math
 import sys
 
@@ -6,6 +10,15 @@ import sys
 # ref: http://stackoverflow.com/questions/8689184/python-name-reduce-is-not-defined
 if sys.version_info >= (3,0):
     from functools import reduce
+
+# To avoid errors resulting from floating point arithmetic
+# I will use the Decimal function to convert all numbers
+# to type decimal before calculating variance
+def decimalize(data):
+    for ii in range(len(data)):
+        data[ii] = Decimal(data[ii])
+
+    return(data)
 
 
 def mean(data):
@@ -16,8 +29,10 @@ def mean(data):
     1.5
     >>> mean([1, 2, 3])
     2.0
+    >>> mean([-1, 0, 1, 2, 3])
+    1.0
     """
-    return sum(data) / float(len(data))
+    return sum(data) / len(data)
 
 # geometric mean
 #
@@ -39,24 +54,37 @@ def geometric_mean(x):
 # [variance](http://en.wikipedia.org/wiki/Variance)
 #
 # is the sum of squared deviations from the mean
-def variance(data):
+def variance(data, sample = True):
     """
     >>> variance([1]) # variance of one value is not defined
     >>> variance([4]) # variance of one value is not defined
+    >>> variance([1, 2, 3, 4])
+    1.6666666666666667
+    >>> variance([1, 2, 3, 4], sample = False)
+    1.25
     >>> variance([1, 2, 3, 4, 5, 6])
     3.5
     >>> variance([-2, -1, 0, 1, 2])
     2.5
     """
+    if len(data) < 2:
+        return(None)
+
+    data = decimalize(data)
     m = mean(data)
-    return mean([pow(x - m, 2) for x in data]);
+    if sample:
+        return(float(sum([pow(x -m, 2) for x in data]) / (len(data) - 1)))
+    else:
+        return float(mean([pow(x - m, 2) for x in data]))
 
 def standard_deviation(data):
     """
     >>> standard_deviation([1, 2, 3])
     1.0
     >>> standard_deviation([1, 2, 3, 4])
-    1.290994
+    1.2909944487358056
+    >>> standard_deviation([-1, 0, 1, 2, 3, 4])
+    1.8708286933869707
     """
     return math.sqrt(variance(data))
 
