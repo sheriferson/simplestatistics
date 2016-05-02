@@ -15,10 +15,15 @@ if sys.version_info >= (3,0):
 # I will use the Decimal function to convert all numbers
 # to type decimal before calculating variance
 def decimalize(data):
-    for ii in range(len(data)):
-        data[ii] = Decimal(data[ii])
+    # if asked to decimalize one number
+    if type(data) is float:
+        return(Decimal(data))
+    # if asked to decimalize a list/vector
+    else:
+        for ii in range(len(data)):
+            data[ii] = Decimal(data[ii])
 
-    return(data)
+        return(data)
 
 
 def mean(data):
@@ -49,7 +54,7 @@ def geometric_mean(x):
     >>> geometric_mean([1, 10])
     3.1622776601683795
     """
-    return pow(reduce(lambda v, mem: v * mem, x, 1.0), 1 / float(len(x)));
+    return pow(reduce(lambda v, mem: v * mem, x, 1.0), 1 / float(len(x)))
 
 # [variance](http://en.wikipedia.org/wiki/Variance)
 #
@@ -101,14 +106,24 @@ def standard_deviation(data):
 # null hypothesis can or cannot be rejected.
 def t_test(sample, x):
   """
-  >>> t_test([1, 2, 3, 4, 5, 6], 3.385);
-  0.1649415480881466
+  >>> t_test([1, 2, 3, 4, 5, 6], 3.385)
+  0.150570344262835
   """
+
+  sample = decimalize(sample)
+  x = decimalize(x)
+
   # Square root the length of the sample
   rootN = pow(len(sample), 0.5)
+  rootN = decimalize(rootN)
+
+  # get standard deviation of sample
+  sample_sd = decimalize(standard_deviation(sample))
+
   # Compute the known value against the sample,
   # returning the t value
-  return (mean(sample) - x) / (standard_deviation(sample) / rootN)
+  t_statistic = ((mean(sample) - x) / sample_sd) * rootN
+  return(float(t_statistic))
 
 if __name__ == "__main__":
     import doctest
