@@ -19,7 +19,7 @@ or
 | Mean                           | `mean([1, 2, 3])`                    |
 | Sample and population variance | `variance([1, 2, 3], sample = True)` |
 | Standard deviation             | `standard_deviation([1, 2, 3])`      |
-| One-sample t-test              | `t_test([1, 2, 3, 4, 5, 6])`         |
+| One-sample t-test              | `t_test([1, 2, 3, 4, 5, 6], 3.385)`  |
 
 #### Coming soon
 
