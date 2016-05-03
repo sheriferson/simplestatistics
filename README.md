@@ -20,11 +20,11 @@ or
 | Sample and population variance | `variance([1, 2, 3], sample = True)` |
 | Standard deviation             | `standard_deviation([1, 2, 3])`      |
 | One-sample t-test              | `t_test([1, 2, 3, 4, 5, 6], 3.385)`  |
+| Min                            | `min([-3, 0, 3])`                    |
+| Max                            | `max([1, 2, 3])`                     |
 
 #### Coming soon
 
-- `min([1, 2, 3])`
-- `max([1, 2, 3])`
 - `median([1, 2, 3])`
 - `mode([1, 2, 1, 3, 3, 5])`
 - Proper documentation.
