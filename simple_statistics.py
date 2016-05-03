@@ -93,6 +93,51 @@ def standard_deviation(data):
     """
     return math.sqrt(variance(data))
 
+def min(data):
+    """
+    >>> min([1, 2, 3])
+    1
+    >>> min([-3, 0, 3])
+    -3
+    >>> min([-2])
+    -2
+    >>> min(-3)
+    -3
+    """
+
+    if type(data) is list:
+        min_value = data[0]
+        for ii in data:
+            if ii < min_value:
+                min_value = ii
+    elif type(data) is int or type(data) is float:
+        min_value = data
+
+    return(min_value)
+
+
+def max(data):
+    """
+    >>> max([1, 2, 3])
+    3
+    >>> max([-3, 0, 3])
+    3
+    >>> max([-2])
+    -2
+    >>> max(-3)
+    -3
+    """
+
+    if type(data) is list:
+        max_value = data[0]
+        for ii in data:
+            if ii > max_value:
+                max_value = ii
+    elif type(data) is int or type(data) is float:
+        max_value = data
+
+    return(max_value)
+
 # [t-test](http://en.wikipedia.org/wiki/Student's_t-test)
 #
 # This is to compute a one-sample t-test, comparing the mean
