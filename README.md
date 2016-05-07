@@ -5,6 +5,8 @@ for Python.
 
 ### Tests
 
+[![Circle CI](https://circleci.com/gh/sheriferson/simple-statistics-py.svg?style=svg)](https://circleci.com/gh/sheriferson/simple-statistics-py)
+
     python simple_statistics.py
 
 or
@@ -17,6 +19,7 @@ or
 | Function                       | Example                              |
 |--------------------------------|--------------------------------------|
 | Mean                           | `mean([1, 2, 3])`                    |
+| Median                         | `median([10, 2, -5, -1])`            |
 | Geometric mean                 | `geometric_mean([1, 10])`            |
 | Sample and population variance | `variance([1, 2, 3], sample = True)` |
 | Standard deviation             | `standard_deviation([1, 2, 3])`      |
@@ -26,7 +29,6 @@ or
 
 #### Coming soon
 
-- `median([1, 2, 3])`
 - `mode([1, 2, 1, 3, 3, 5])`
 - Proper documentation.
 
