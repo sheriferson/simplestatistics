@@ -1,3 +1,5 @@
 test:
     override:
-        - nosetests --with-doctest
+        - nosetests --with-coverage --cover-package=simple_statistics --with-doctest
+    post:
+        - pip install codecov && codecov
