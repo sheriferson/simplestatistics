@@ -1,5 +1,9 @@
 test:
     override:
         - nosetests --with-coverage --cover-package=simple_statistics --with-doctest
-    post:
-        - pip install codecov && codecov
+
+deployment:
+  codecov:
+    branch: /.*/
+    commands:
+      - bash <(curl -s https://codecov.io/bash)
