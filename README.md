@@ -8,12 +8,17 @@ for Python.
 [![Circle CI](https://circleci.com/gh/sheriferson/simple-statistics-py.svg?style=svg)](https://circleci.com/gh/sheriferson/simple-statistics-py)
 [![codecov](https://codecov.io/gh/sheriferson/simple-statistics-py/branch/master/graph/badge.svg)](https://codecov.io/gh/sheriferson/simple-statistics-py)
 
-    python simple_statistics.py
+You need to have [`coverage`](https://pypi.python.org/pypi/coverage) installed:
 
-or
+```bash
+pip install coverage
+```
 
-    python3 simple_statistics.py
+Then:
 
+```bash
+nosetests --with-coverage --cover-package=simple_statistics --with-doctest
+```
 
 ### Functions
 

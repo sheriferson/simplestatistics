@@ -238,7 +238,3 @@ def t_test(sample, x):
   # returning the t value
   t_statistic = ((mean(sample) - x) / sample_sd) * rootN
   return(float(t_statistic))
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
