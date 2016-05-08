@@ -1,4 +1,4 @@
-## simple-statistics-py
+## simplestatistics
 
 [simple-statistics](https://github.com/tmcw/simple-statistics)
 for Python.
@@ -17,7 +17,7 @@ pip install coverage
 Then:
 
 ```bash
-nosetests --with-coverage --cover-package=simple_statistics --with-doctest
+nosetests --with-coverage --cover-package=simplestatistics --with-doctest
 ```
 
 ### Functions

@@ -4,7 +4,7 @@ dependencies:
 
 test:
     override:
-        - nosetests --with-coverage --cover-package=simple_statistics --with-doctest
+        - nosetests --with-coverage --cover-package=simplestatistics --with-doctest
 
 deployment:
   codecov:
