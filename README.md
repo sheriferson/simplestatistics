@@ -5,8 +5,8 @@ for Python.
 
 ### Tests
 
-[![Circle CI](https://circleci.com/gh/sheriferson/simple-statistics-py.svg?style=svg)](https://circleci.com/gh/sheriferson/simple-statistics-py)
-[![codecov](https://codecov.io/gh/sheriferson/simple-statistics-py/branch/master/graph/badge.svg)](https://codecov.io/gh/sheriferson/simple-statistics-py)
+[![Circle CI](https://circleci.com/gh/sheriferson/simplestatistics.svg?style=svg)](https://circleci.com/gh/sheriferson/simplestatistics)
+[![codecov](https://codecov.io/gh/sheriferson/simplestatistics/branch/master/graph/badge.svg)](https://codecov.io/gh/sheriferson/simplestatistics)
 
 You need to have [`coverage`](https://pypi.python.org/pypi/coverage) installed:
 
@@ -37,6 +37,8 @@ nosetests --with-coverage --cover-package=simplestatistics --with-doctest
 #### Coming soon
 
 - Proper documentation.
+- Package structure (`import simplestatistics as ss`, `ss.mean([1, 2, 3])`)
+- Put package on [PyPi](`https://pypi.python.org/pypi), (`pip install simplestatistics`)
 
 And more.
 
