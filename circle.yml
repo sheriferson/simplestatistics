@@ -1,3 +1,7 @@
+dependencies:
+    pre:
+        - pip --user install coverage
+
 test:
     override:
         - nosetests --with-coverage --cover-package=simple_statistics --with-doctest

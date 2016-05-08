@@ -6,6 +6,7 @@ for Python.
 ### Tests
 
 [![Circle CI](https://circleci.com/gh/sheriferson/simple-statistics-py.svg?style=svg)](https://circleci.com/gh/sheriferson/simple-statistics-py)
+[![codecov](https://codecov.io/gh/sheriferson/simple-statistics-py/branch/master/graph/badge.svg)](https://codecov.io/gh/sheriferson/simple-statistics-py)
 
     python simple_statistics.py
 
