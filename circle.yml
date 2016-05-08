@@ -1,6 +1,6 @@
 dependencies:
     pre:
-        - pip --user install coverage
+        - pip install --user coverage
 
 test:
     override:
