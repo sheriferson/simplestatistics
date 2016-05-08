@@ -1,5 +1,6 @@
-deployment:
-    - pip install coverage
+dependcies:
+    pre:
+        - pip install coverage
 
 test:
     override:
