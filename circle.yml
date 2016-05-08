@@ -1,4 +1,4 @@
-dependcies:
+dependencies:
     pre:
         - pip install coverage
 
