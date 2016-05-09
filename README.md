@@ -3,21 +3,32 @@
 [simple-statistics](https://github.com/tmcw/simple-statistics)
 for Python.
 
+### Usage
+
+```python
+>>> import simplestatistics as ss
+>>> ss.mean([1, 2, 3])
+2.0
+>>> ss.t_test([1, 2, 2.4, 3, 0.9], 2)
+-0.3461277235039042
+```
+
 ### Tests
 
 [![Circle CI](https://circleci.com/gh/sheriferson/simplestatistics.svg?style=svg)](https://circleci.com/gh/sheriferson/simplestatistics)
 [![codecov](https://codecov.io/gh/sheriferson/simplestatistics/branch/master/graph/badge.svg)](https://codecov.io/gh/sheriferson/simplestatistics)
 
-You need to have [`coverage`](https://pypi.python.org/pypi/coverage) installed:
+If you want coverage reports, you need to have [`coverage`](https://pypi.python.org/pypi/coverage) installed:
 
 ```bash
 pip install coverage
+nosetests --with-coverage --cover-package=simplestatistics --with-doctest
 ```
 
-Then:
+Otherwise, to just run the tests:
 
 ```bash
-nosetests --with-coverage --cover-package=simplestatistics --with-doctest
+nosetests --with-doctest
 ```
 
 ### Functions
@@ -37,7 +48,6 @@ nosetests --with-coverage --cover-package=simplestatistics --with-doctest
 #### Coming soon
 
 - Proper documentation.
-- Package structure (`import simplestatistics as ss`, `ss.mean([1, 2, 3])`)
 - Put package on [PyPi](`https://pypi.python.org/pypi), (`pip install simplestatistics`)
 
 And more.
