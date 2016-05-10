@@ -10,4 +10,6 @@ from .statistics.max import max
 from .statistics.variance import variance
 from .statistics.standard_deviation import standard_deviation
 
+from .statistics.z_scores import z_scores
+
 from .statistics.t_test import t_test
