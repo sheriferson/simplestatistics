@@ -13,6 +13,16 @@ for Python.
 -0.3461277235039042
 ```
 
+### Documentation
+
+Inside `simplestatistics/`:
+
+```bash
+make html
+```
+
+Documentation will be generated in `_build/html/`.
+
 ### Tests
 
 [![Circle CI](https://circleci.com/gh/sheriferson/simplestatistics.svg?style=svg)](https://circleci.com/gh/sheriferson/simplestatistics)
@@ -48,7 +58,7 @@ nosetests --with-doctest
 
 #### Coming soon
 
-- Proper documentation.
+- Put documentation on [Read the Docs](https://readthedocs.org/).
 - Put package on [PyPi](`https://pypi.python.org/pypi), (`pip install simplestatistics`)
 
 And more.
