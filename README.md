@@ -1,5 +1,9 @@
 ## simplestatistics
 
+[![Circle CI](https://circleci.com/gh/sheriferson/simplestatistics.svg?style=svg)](https://circleci.com/gh/sheriferson/simplestatistics)
+[![codecov](https://codecov.io/gh/sheriferson/simplestatistics/branch/master/graph/badge.svg)](https://codecov.io/gh/sheriferson/simplestatistics)
+[![Documentation Status](https://readthedocs.org/projects/simplestatistics/badge/?version=latest)](http://simplestatistics.readthedocs.io/en/latest/?badge=latest)
+
 [simple-statistics](https://github.com/tmcw/simple-statistics)
 for Python.
 
@@ -15,7 +19,11 @@ for Python.
 
 ### Documentation
 
-Inside `simplestatistics/`:
+You can [read the documentation online](http://simplestatistics.readthedocs.io/en/latest/).
+
+Or you can generate it yourself:
+
+Inside `simplestatistics/`.
 
 ```bash
 make html
@@ -24,9 +32,6 @@ make html
 Documentation will be generated in `_build/html/`.
 
 ### Tests
-
-[![Circle CI](https://circleci.com/gh/sheriferson/simplestatistics.svg?style=svg)](https://circleci.com/gh/sheriferson/simplestatistics)
-[![codecov](https://codecov.io/gh/sheriferson/simplestatistics/branch/master/graph/badge.svg)](https://codecov.io/gh/sheriferson/simplestatistics)
 
 If you want coverage reports, you need to have [`coverage`](https://pypi.python.org/pypi/coverage) installed:
 
@@ -56,9 +61,8 @@ nosetests --with-doctest
 | Min                            | `min([-3, 0, 3])`                    |
 | Max                            | `max([1, 2, 3])`                     |
 
-#### Coming soon
+### Coming soon
 
-- Put documentation on [Read the Docs](https://readthedocs.org/).
 - Put package on [PyPi](`https://pypi.python.org/pypi), (`pip install simplestatistics`)
 
 And more.
@@ -69,3 +73,5 @@ And more.
 - Use libraries only if you have to and only when unrelated to the math/statistics. For example, `from functools import reduce` to make `reduce` available for those using python3. That's okay, because it's about making python work and not about making the stats easier.
 - It's okay to use operators and functions if they correspond to regular calculator buttons. For example, all calculators have a built-in square root function, so there is no need to implement that ourselves, we can use `math.sqrt()`.
 Anything beyond that, like `mean`, `median`, we have to write ourselves.
+
+Pull requests are welcome!
