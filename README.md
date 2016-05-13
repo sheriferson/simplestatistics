@@ -7,6 +7,13 @@
 [simple-statistics](https://github.com/tmcw/simple-statistics)
 for Python.
 
+`simplestatistics` is compatible with Python 2 & 3.
+### Installation
+
+```bash
+pip install simplestatistics
+```
+
 ### Usage
 
 ```python
@@ -63,9 +70,7 @@ nosetests --with-doctest
 
 ### Coming soon
 
-- Put package on [PyPi](`https://pypi.python.org/pypi), (`pip install simplestatistics`)
-
-And more.
+- A lot more functions.
 
 ### Spirit and rules
 
