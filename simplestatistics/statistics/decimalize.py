@@ -28,7 +28,7 @@ def decimalize(data):
         [Decimal('1'), Decimal('2'), Decimal('3')]
 
         >>> decimalize('abc')
-        "Sorry, the decimalize function accepts lists or tuples of numerics"
+        Sorry, the decimalize function accepts lists or tuples of numerics
     """
     try:
         if type(data) in [int, float]:
