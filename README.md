@@ -63,6 +63,7 @@ nosetests --with-doctest
 | Mode                           | `mode([2, 1, 3, 2, 1])`              |
 | Min                            | `min([-3, 0, 3])`                    |
 | Max                            | `max([1, 2, 3])`                     |
+| Sum                            | `sum([1, 2, 3.5])`                   |
 | Geometric mean                 | `geometric_mean([1, 10])`            |
 | Sample and population variance | `variance([1, 2, 3], sample = True)` |
 | Standard deviation             | `standard_deviation([1, 2, 3])`      |

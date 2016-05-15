@@ -71,6 +71,18 @@ Examples:
 .. automodule:: simplestatistics.statistics.max
     :members:
 
+Sum
+---
+
+Usage::
+
+    simplestatistics.sum([1, 2, 3.5])
+
+Examples:
+
+.. automodule:: simplestatistics.statistics.sum
+    :members:
+
 Geometric mean
 --------------
 
