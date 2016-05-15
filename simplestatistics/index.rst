@@ -47,6 +47,30 @@ Examples:
 
 ----
 
+Min
+---
+
+Usage::
+
+    simplestatistics.min([-1, 0, 1])
+
+Examples:
+
+.. automodule:: simplestatistics.statistics.min
+    :members:
+
+Max
+---
+
+Usage::
+
+    simplestatistics.max([-2, 0, 2])
+
+Examples:
+
+.. automodule:: simplestatistics.statistics.max
+    :members:
+
 Geometric mean
 --------------
 
