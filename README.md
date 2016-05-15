@@ -3,6 +3,7 @@
 [![Circle CI](https://circleci.com/gh/sheriferson/simplestatistics.svg?style=svg)](https://circleci.com/gh/sheriferson/simplestatistics)
 [![codecov](https://codecov.io/gh/sheriferson/simplestatistics/branch/master/graph/badge.svg)](https://codecov.io/gh/sheriferson/simplestatistics)
 [![Documentation Status](https://readthedocs.org/projects/simplestatistics/badge/?version=latest)](http://simplestatistics.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version](https://badge.fury.io/py/simplestatistics.svg)](https://badge.fury.io/py/simplestatistics)
 
 [simple-statistics](https://github.com/tmcw/simple-statistics)
 for Python.
