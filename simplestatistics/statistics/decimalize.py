@@ -1,16 +1,40 @@
 from decimal import *
 
-# To avoid errors resulting from floating point arithmetic
-# I will use the Decimal function to convert all numbers
-# to type decimal before calculating variance
 def decimalize(data):
-    # if asked to decimalize one number
-    if type(data) is int or type(data) is float:
-        return(Decimal(data))
-    # if asked to decimalize a list/vector
-    else:
-        for ii in range(len(data)):
-            data[ii] = Decimal(data[ii])
+    """Utility function converting all inputs to Decimal,
+    streamlines input types for other statistics functions.
 
-        return(data)
+    Args:
+        data: A numeric built-in object, a tuple or 
+            list of numeric objects.
 
+    Returns:
+        A Decimal object in the case of a single numeric
+        built-in, or a list of Decimal objects when supplied
+        a list or tuple of built-in numerics.
+
+    Raises:
+        TypeError: An object other than a built-in numeric or
+            a list or tuple of numerics was supplied as data.
+        
+    Examples:
+        >>> decimalize([1, 2, 3])
+            [1, 2, 3]
+    """
+    try:
+        if type(data) in [int, float]:
+            return(Decimal(data))
+        elif type(data) == list:
+            for ii in range(len(data)):
+                data[ii] = Decimal(data[ii])
+                return data
+        elif type(data) == tuple:
+            data = list(data)
+            for ii in range(len(data)):
+                data[ii] = Decimal(data[ii])
+                return data
+        else:
+            raise TypeError
+    except TypeError:
+        print("Sorry, the decimalize function accepts lists or tuples of numerics")    
+    return

@@ -132,6 +132,17 @@ Examples:
 
 .. automodule:: simplestatistics.statistics.t_test
     :members:
+    
+Decimalize
+----------
+
+Usage::
+
+    simplestatistics.statistics.decimalize(data)
+
+.. automodule:: simplestatistics.statistics.decimalize
+    :members:
+
 
 Indices and tables
 ==================
