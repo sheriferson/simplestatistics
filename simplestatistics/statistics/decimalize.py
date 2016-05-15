@@ -18,8 +18,11 @@ def decimalize(data):
             a list or tuple of numerics was supplied as data.
         
     Examples:
-        >>> decimalize([1, 2, 3])
-            [1, 2, 3]
+        >>> decimalize(1)
+        Decimal('1')
+        
+        >>> decimalize([1,2,3])
+        [Decimal('1'), Decimal('2'), Decimal('3')]
     """
     try:
         if type(data) in [int, float]:
@@ -27,12 +30,12 @@ def decimalize(data):
         elif type(data) == list:
             for ii in range(len(data)):
                 data[ii] = Decimal(data[ii])
-                return data
+            return data
         elif type(data) == tuple:
             data = list(data)
             for ii in range(len(data)):
                 data[ii] = Decimal(data[ii])
-                return data
+            return data
         else:
             raise TypeError
     except TypeError:
