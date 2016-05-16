@@ -4,21 +4,32 @@ from __future__ import division
 from .mean import mean
 from .decimalize import decimalize
 
-# [variance](http://en.wikipedia.org/wiki/Variance)
-#
-# is the sum of squared deviations from the mean
 def variance(data, sample = True):
     """
-    >>> variance([1]) # variance of one value is not defined
-    >>> variance([4]) # variance of one value is not defined
-    >>> variance([1, 2, 3, 4])
-    1.6666666666666667
-    >>> variance([1, 2, 3, 4], sample = False)
-    1.25
-    >>> variance([1, 2, 3, 4, 5, 6])
-    3.5
-    >>> variance([-2, -1, 0, 1, 2])
-    2.5
+    Variance_ is the sum of squared deviations from the mean. It is a general measurement of
+    how far from the mean the values are.
+
+    .. _Variance: http://en.wikipedia.org/wiki/Variance
+
+    Args:
+        data: A list of numeric objects.
+        sample: A boolean value. If True, calculates sample variance. If False, calculates
+            population variance.
+
+    Returns:
+        A float object.
+
+    Examples:
+        >>> variance([1, 2, 3, 4])
+        1.6666666666666667
+        >>> variance([1, 2, 3, 4], sample = False)
+        1.25
+        >>> variance([1, 2, 3, 4, 5, 6])
+        3.5
+        >>> variance([-2, -1, 0, 1, 2])
+        2.5
+        >>> variance([1]) # variance of one value is not defined
+        >>> variance([4]) # variance of one value is not defined
     """
     if len(data) < 2:
         return(None)

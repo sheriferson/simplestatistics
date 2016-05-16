@@ -47,14 +47,7 @@ Geometric mean
 Variance
 --------
 
-Usage::
-
-    simplestatistics.variance([1, 2, 3, 4])
-
-Examples:
-
-.. automodule:: simplestatistics.statistics.variance
-    :members:
+.. autofunction:: simplestatistics.variance
 
 Standard deviation
 ------------------
