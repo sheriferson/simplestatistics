@@ -42,14 +42,7 @@ Sum
 Geometric mean
 --------------
 
-Usage::
-
-    simplestatistics.geometric_mean([1, 10])
-
-Examples:
-
-.. automodule:: simplestatistics.statistics.geometric_mean
-    :members:
+.. autofunction:: simplestatistics.geometric_mean
 
 Variance
 --------
