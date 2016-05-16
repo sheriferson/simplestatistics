@@ -2,25 +2,38 @@ from .decimalize import decimalize
 
 def sum(data):
     """
-    >>> sum([1, 2, 3])
-    6.0
-    >>> sum([-1, 0, 1])
-    0.0
-    >>> sum([2.3, 0, -1.1])
-    1.2
-    >>> sum(4)
-    4
-    >>> sum((3, 2.5))
-    5.5
-    >>> sum('abc')
-    Traceback (most recent call last):
-        ...
-    TypeError: sum() expects an int, list, or tuple.
-    """
-    # To reduce floating-point errors, I am using an implementation of
-    # the Kahan summation algorithm, modeled after:
-    # https://github.com/simple-statistics/simple-statistics/blob/master/src/sum.js
+    This function returns the sum of numerical values in a data set.
 
+    To reduce floating-point errors, I am using an implementation of the `Kahan summation algorithm`_.
+
+    .. _`Kahan summation algorithm`: https://en.wikipedia.org/wiki/Kahan_summation_algorithm
+
+    The implementation is modeled after that of `simple-statistics`_.
+
+    .. _`simple-statistics`: https://github.com/simple-statistics/simple-statistics/blob/master/src/sum.js
+
+    Args:
+        data: A numeric built-in object or list of numeric objects.
+
+    Returns:
+        A numeric object.
+
+    Examples:
+        >>> sum([1, 2, 3])
+        6.0
+        >>> sum([-1, 0, 1])
+        0.0
+        >>> sum([2.3, 0, -1.1])
+        1.2
+        >>> sum(4)
+        4
+        >>> sum((3, 2.5))
+        5.5
+        >>> sum('abc')
+        Traceback (most recent call last):
+            ...
+        TypeError: sum() expects an int, list, or tuple.
+    """
     current_sum = 0
 
     error_compensation = 0

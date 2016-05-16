@@ -6,82 +6,38 @@
 simplestatistics
 ============================================
 
-Contents:
-
 .. toctree::
     :maxdepth: 2
 
 Mean
 ----
 
-Usage::
-
-    simplestatistics.mean(data)
-
-.. automodule:: simplestatistics.statistics.mean
-    :members:
+.. autofunction:: simplestatistics.mean
 
 Median
 ------
 
-Usage::
-
-    simplestatistics.median(data)
-
-Examples:
-
-.. automodule:: simplestatistics.statistics.median
-    :members:
+.. autofunction:: simplestatistics.median
 
 Mode
 ----
 
-Usage::
-
-    simplestatistics.mode([1, 2, 3, 1])
-
-Examples:
-
-.. automodule:: simplestatistics.statistics.mode
-    :members:
-
-----
+.. autofunction:: simplestatistics.mode
 
 Min
 ---
 
-Usage::
-
-    simplestatistics.min([-1, 0, 1])
-
-Examples:
-
-.. automodule:: simplestatistics.statistics.min
-    :members:
+.. autofunction:: simplestatistics.min
 
 Max
 ---
 
-Usage::
-
-    simplestatistics.max([-2, 0, 2])
-
-Examples:
-
-.. automodule:: simplestatistics.statistics.max
-    :members:
+.. autofunction:: simplestatistics.max
 
 Sum
 ---
 
-Usage::
-
-    simplestatistics.sum([1, 2, 3.5])
-
-Examples:
-
-.. automodule:: simplestatistics.statistics.sum
-    :members:
+.. autofunction:: simplestatistics.sum
 
 Geometric mean
 --------------
@@ -94,8 +50,6 @@ Examples:
 
 .. automodule:: simplestatistics.statistics.geometric_mean
     :members:
-
-----
 
 Variance
 --------

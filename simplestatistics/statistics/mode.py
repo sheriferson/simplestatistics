@@ -1,14 +1,34 @@
 def mode(data):
     """
-    >>> mode([1, 2, 3, 1])
-    [1]
-    >>> mode([2, 3, 1, 1, 2])
-    [1, 2]
-    >>> mode([-1, 1, 0])
-    [-1, 0, 1]
-    >>> mode(4)
-    4
-    >>> mode([])
+    The mode_ is "the value that appears most often in a set of data."
+
+    .. _mode: https://en.wikipedia.org/wiki/Mode_(statistics)
+
+    If more than one value appear equally frequently more than the rest of the values,
+    then the mode is not unique and includes all the values that appear the same maximum
+    number of times.
+
+    In the most extreme of cases, of each value in the dataset appears the same number of times,
+    then the mode is all the values.
+
+    Args:
+        data: A numeric built-in object, a tuple, or list of numeric objects.
+
+    Returns:
+        A list containing one or more modes if the function received a list as input.
+        Or, a numeric object if the function received a numeric object.
+
+
+    Examples:
+        >>> mode([1, 2, 3, 1])
+        [1]
+        >>> mode([2, 3, 1, 1, 2])
+        [1, 2]
+        >>> mode([-1, 1, 0])
+        [-1, 0, 1]
+        >>> mode(4)
+        4
+        >>> mode([])
     """
     max_count = 0
     modes = []

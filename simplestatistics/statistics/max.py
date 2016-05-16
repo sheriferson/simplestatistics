@@ -1,13 +1,22 @@
 def max(data):
     """
-    >>> max([1, 2, 3])
-    3
-    >>> max([-3, 0, 3])
-    3
-    >>> max([-2])
-    -2
-    >>> max(-3)
-    -3
+    This function returns the maximum numerical value in a data set.
+
+    Args:
+        data: A numeric built-in object or list of numeric objects.
+
+    Returns:
+        A numeric object.
+
+    Examples:
+        >>> max([1, 2, 3])
+        3
+        >>> max([-3, 0, 3])
+        3
+        >>> max([-2])
+        -2
+        >>> max(-3)
+        -3
     """
 
     if type(data) is list:
