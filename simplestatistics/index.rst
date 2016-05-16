@@ -52,14 +52,7 @@ Variance
 Standard deviation
 ------------------
 
-Usage::
-
-    simplestatistics.standard_deviation([1, 2, 3])
-
-Examples:
-
-.. automodule:: simplestatistics.statistics.standard_deviation
-    :members:
+.. autofunction:: simplestatistics.standard_deviation
 
 Standard scores (z scores)
 --------------------------
