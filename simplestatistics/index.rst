@@ -57,14 +57,7 @@ Standard deviation
 Standard scores (z scores)
 --------------------------
 
-Usage::
-
-    simplestatistics.z_scores([-2, -1, 0, 1, 2])
-
-Examples:
-
-.. automodule:: simplestatistics.statistics.z_scores
-    :members:
+.. autofunction:: simplestatistics.z_scores
 
 t test
 ------
