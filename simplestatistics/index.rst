@@ -59,17 +59,9 @@ Standard scores (z scores)
 
 .. autofunction:: simplestatistics.z_scores
 
-t test
-------
-
-Usage::
-
-    simplestatistics.t_test([1, 2, 3, 4, 5, 6], 3.385)
-
-Examples:
-
-.. automodule:: simplestatistics.statistics.t_test
-    :members:
+One-sample t test
+-----------------
+.. autofunction:: simplestatistics.t_test
     
 Decimalize
 ----------

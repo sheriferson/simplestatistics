@@ -5,21 +5,40 @@ from .decimalize import decimalize
 from .mean import mean
 from .standard_deviation import standard_deviation
 
-# [t-test](http://en.wikipedia.org/wiki/Student's_t-test)
-#
-# This is to compute a one-sample t-test, comparing the mean
-# of a sample to a known value, x.
-#
-# in this case, we're trying to determine whether the
-# population mean is equal to the value that we know, which is `x`
-# here. usually the results here are used to look up a
-# [p-value](http://en.wikipedia.org/wiki/P-value), which, for
-# a certain level of significance, will let you determine that the
-# null hypothesis can or cannot be rejected.
 def t_test(sample, x):
     """
-    >>> t_test([1, 2, 3, 4, 5, 6], 3.385)
-    0.150570344262835
+    A one-sample `t-test`_ is a test that compares the mean of a sample to a known value, x.
+
+    In this case, we're trying to determine whether the sample mean is equal to the value
+    that we know, which is `x`. Usually the results are used to look up a `p-value`_, which,
+    for a certain level of significance, will let you determine whether the null hypothesis
+    (that there is no real difference between the mean of the sample and provided `x`) can
+    be rejected or not.
+
+    .. _`t-test`: http://en.wikipedia.org/wiki/Student's_t-test
+    .. _`p-value`: http://en.wikipedia.org/wiki/P-value
+
+    Equation:
+        .. math::
+            t = \\frac{\\bar{X} - \\mu}{sd_X}
+
+    :math:`\\bar{X}` is the sample mean
+
+    :math:`\\mu` is the provided value
+
+    :math:`sd_X` is the sample standard deviation
+
+    Args:
+        sample: A list of numerical objects (the sample)
+        x: The provided value to compare the mean of the sample to.
+
+    Returns:
+        A numerical object.
+
+    Example:
+
+        >>> t_test([1, 2, 3, 4, 5, 6], 3.385)
+        0.150570344262835
     """
 
     sample = decimalize(sample)
