@@ -7,7 +7,7 @@ def mean(data):
 
     .. _mean: https://en.wikipedia.org/wiki/Mean
 
-    Formula:
+    Equation:
         .. math::
             \\bar{X} = \\frac{\sum X}{n}
 

@@ -23,7 +23,7 @@ def geometric_mean(data):
 
     .. _`geometric mean`: https://en.wikipedia.org/wiki/Geometric_mean
 
-    Formula:
+    Equation:
         .. math::
             \\sqrt[n]{x_1 x_2 \\dotso x_n}
 
