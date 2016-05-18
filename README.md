@@ -56,19 +56,20 @@ nosetests --with-doctest
 
 ### Functions
 
-| Function                       | Example                              |
-|--------------------------------|--------------------------------------|
-| Mean                           | `mean([1, 2, 3])`                    |
-| Median                         | `median([10, 2, -5, -1])`            |
-| Mode                           | `mode([2, 1, 3, 2, 1])`              |
-| Min                            | `min([-3, 0, 3])`                    |
-| Max                            | `max([1, 2, 3])`                     |
-| Sum                            | `sum([1, 2, 3.5])`                   |
-| Geometric mean                 | `geometric_mean([1, 10])`            |
-| Sample and population variance | `variance([1, 2, 3], sample = True)` |
-| Standard deviation             | `standard_deviation([1, 2, 3])`      |
-| Standard scores (z-scores)     | `z_scores([-2, -1, 0, 1, 2])`        |
-| One-sample t-test              | `t_test([1, 2, 3, 4, 5, 6], 3.385)`  |
+| Function                       | Example                                                          |
+|--------------------------------|------------------------------------------------------------------|
+| Mean                           | `mean([1, 2, 3])`                                                |
+| Median                         | `median([10, 2, -5, -1])`                                        |
+| Mode                           | `mode([2, 1, 3, 2, 1])`                                          |
+| Min                            | `min([-3, 0, 3])`                                                |
+| Max                            | `max([1, 2, 3])`                                                 |
+| Sum                            | `sum([1, 2, 3.5])`                                               |
+| Geometric mean                 | `geometric_mean([1, 10])`                                        |
+| Quantiles                      | `quantile([3, 6, 7, 8, 8, 9, 10, 13, 15, 16, 20], [0.25, 0.75])` |
+| Sample and population variance | `variance([1, 2, 3], sample = True)`                             |
+| Standard deviation             | `standard_deviation([1, 2, 3])`                                  |
+| Standard scores (z-scores)     | `z_scores([-2, -1, 0, 1, 2])`                                    |
+| One-sample t-test              | `t_test([1, 2, 3, 4, 5, 6], 3.385)`                              |
 
 ### Coming soon
 

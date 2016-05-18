@@ -44,6 +44,11 @@ Geometric mean
 
 .. autofunction:: simplestatistics.geometric_mean
 
+Quantiles
+---------
+
+.. autofunction:: simplestatistics.quantile
+
 Variance
 --------
 
