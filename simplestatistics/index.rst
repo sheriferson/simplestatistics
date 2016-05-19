@@ -64,6 +64,11 @@ Standard scores (z scores)
 
 .. autofunction:: simplestatistics.z_scores
 
+Product
+-------
+
+.. autofunction:: simplestatistics.product
+
 One-sample t test
 -----------------
 .. autofunction:: simplestatistics.t_test

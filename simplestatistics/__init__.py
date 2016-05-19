@@ -16,4 +16,6 @@ from .statistics.standard_deviation import standard_deviation
 
 from .statistics.z_scores import z_scores
 
+from .statistics.product import product
+
 from .statistics.t_test import t_test
