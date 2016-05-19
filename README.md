@@ -69,6 +69,7 @@ nosetests --with-doctest
 | Sample and population variance | `variance([1, 2, 3], sample = True)`                             |
 | Standard deviation             | `standard_deviation([1, 2, 3])`                                  |
 | Standard scores (z-scores)     | `z_scores([-2, -1, 0, 1, 2])`                                    |
+| Product                        | `product([1.25, 2.75], [2.5, 3.40])`                             |
 | One-sample t-test              | `t_test([1, 2, 3, 4, 5, 6], 3.385)`                              |
 
 ### Coming soon
