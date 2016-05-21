@@ -18,4 +18,6 @@ from .statistics.z_scores import z_scores
 
 from .statistics.product import product
 
+from .statistics.correlate import correlate
+
 from .statistics.t_test import t_test

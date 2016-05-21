@@ -69,6 +69,11 @@ Product
 
 .. autofunction:: simplestatistics.product
 
+Correlation
+-----------
+
+.. autofunction:: simplestatistics.correlate
+
 One-sample t test
 -----------------
 .. autofunction:: simplestatistics.t_test
