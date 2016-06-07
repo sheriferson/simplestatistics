@@ -1,0 +1,15 @@
+# simplestatistics changelog
+
+## 0.1.3
+
+2016-06-06
+
+### Added
+
+Functions for calculating correlation coefficients, products of vectors,
+quantiles, and sums.
+
+- `correlate()`
+- `product()`
+- `quantiles()`
+- `sum()`

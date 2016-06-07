@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name = 'simplestatistics',
     packages = ['simplestatistics', 'simplestatistics.statistics'],
-    version = '0.1.2',
+    version = '0.1.3',
     description = 'Simple statistical functions implemented in python.',
     author = 'Sherif Soliman',
     author_email = 'sherif@ssoliman.com',
