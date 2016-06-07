@@ -4,6 +4,7 @@ setup.py
 simplestatistics/__init__.py
 simplestatistics/conf.py
 simplestatistics/statistics/__init__.py
+simplestatistics/statistics/correlate.py
 simplestatistics/statistics/decimalize.py
 simplestatistics/statistics/geometric_mean.py
 simplestatistics/statistics/max.py
@@ -11,7 +12,10 @@ simplestatistics/statistics/mean.py
 simplestatistics/statistics/median.py
 simplestatistics/statistics/min.py
 simplestatistics/statistics/mode.py
+simplestatistics/statistics/product.py
+simplestatistics/statistics/quantile.py
 simplestatistics/statistics/standard_deviation.py
+simplestatistics/statistics/sum.py
 simplestatistics/statistics/t_test.py
 simplestatistics/statistics/variance.py
 simplestatistics/statistics/z_scores.py
