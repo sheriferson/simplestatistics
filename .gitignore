@@ -1,4 +1,5 @@
 _build/
+htmlcov/
 *.pyc
 .coverage
 *.taskpaper
