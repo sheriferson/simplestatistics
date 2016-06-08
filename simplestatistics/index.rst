@@ -44,6 +44,11 @@ Factorial
 
 .. autofunction:: simplestatistics.factorial
 
+Choose
+------
+
+.. autofunction:: simplestatistics.choose
+
 Geometric mean
 --------------
 

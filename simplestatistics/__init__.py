@@ -9,6 +9,7 @@ from .statistics.max import max
 
 from .statistics.sum import sum
 from .statistics.factorial import factorial
+from .statistics.choose import choose
 
 from .statistics.quantile import quantile
 

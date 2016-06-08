@@ -54,7 +54,7 @@ Otherwise, to just run the tests:
 nosetests --with-doctest
 ```
 
-### Functions
+### Functions and examples
 
 | Function                       | Example                                                              |
 |--------------------------------|----------------------------------------------------------------------|
@@ -65,6 +65,7 @@ nosetests --with-doctest
 | Max                            | `max([1, 2, 3])`                                                     |
 | Sum                            | `sum([1, 2, 3.5])`                                                   |
 | Factorial                      | `factorial(20)` or `factorial([1, 5, 20])`                           |
+| Choose                         | `choose(5, 3)`                                                       |
 | Geometric mean                 | `geometric_mean([1, 10])`                                            |
 | Quantiles                      | `quantile([3, 6, 7, 8, 8, 9, 10, 13, 15, 16, 20], [0.25, 0.75])`     |
 | Sample and population variance | `variance([1, 2, 3], sample = True)`                                 |
