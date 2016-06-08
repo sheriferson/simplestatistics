@@ -47,6 +47,11 @@ def quantile(data, p = [0, .25, .5, .75, 1]):
         [3, 7, 9, 15, 20]
         >>> quantile([3, 6, 7, 8, 8, 9, 10, 13, 15, 16, 20], [.75, .25])
         [15, 7]
+
+        >>> quantile(4, .5)
+        Traceback (most recent call last):
+            ...
+        TypeError: quantile expects a list of numerical objects.
     """
     # this function needs a list
     if type(data) is not list:
