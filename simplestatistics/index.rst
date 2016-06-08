@@ -39,6 +39,11 @@ Sum
 
 .. autofunction:: simplestatistics.sum
 
+Factorial
+---------
+
+.. autofunction:: simplestatistics.factorial
+
 Geometric mean
 --------------
 

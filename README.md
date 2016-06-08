@@ -64,6 +64,7 @@ nosetests --with-doctest
 | Min                            | `min([-3, 0, 3])`                                                    |
 | Max                            | `max([1, 2, 3])`                                                     |
 | Sum                            | `sum([1, 2, 3.5])`                                                   |
+| Factorial                      | `factorial(20)` or `factorial([1, 5, 20])`                           |
 | Geometric mean                 | `geometric_mean([1, 10])`                                            |
 | Quantiles                      | `quantile([3, 6, 7, 8, 8, 9, 10, 13, 15, 16, 20], [0.25, 0.75])`     |
 | Sample and population variance | `variance([1, 2, 3], sample = True)`                                 |

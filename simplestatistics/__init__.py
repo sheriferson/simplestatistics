@@ -8,6 +8,7 @@ from .statistics.min import min
 from .statistics.max import max
 
 from .statistics.sum import sum
+from .statistics.factorial import factorial
 
 from .statistics.quantile import quantile
 
