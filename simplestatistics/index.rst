@@ -49,6 +49,11 @@ Choose
 
 .. autofunction:: simplestatistics.choose
 
+Binomial distribution
+---------------------
+
+.. autofunction:: simplestatistics.binomial
+
 Geometric mean
 --------------
 

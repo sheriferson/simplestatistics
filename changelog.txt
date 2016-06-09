@@ -1,5 +1,19 @@
 # simplestatistics changelog
 
+## x.x.x
+
+Date TBD
+
+### Added
+
+- `factorial()`
+- `choose()`
+- `binomial()` to calculate binomial distribution probabilities
+
+### Improved
+
+- 100% test coverage
+
 ## 0.1.3
 
 2016-06-06

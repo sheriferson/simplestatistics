@@ -66,6 +66,7 @@ nosetests --with-doctest
 | Sum                            | `sum([1, 2, 3.5])`                                                   |
 | Factorial                      | `factorial(20)` or `factorial([1, 5, 20])`                           |
 | Choose                         | `choose(5, 3)`                                                       |
+| Binomial distribution          | `binomial(4, 12, 0.2)` or `binomial([3,4,5], 12, 0.5)`               |
 | Geometric mean                 | `geometric_mean([1, 10])`                                            |
 | Quantiles                      | `quantile([3, 6, 7, 8, 8, 9, 10, 13, 15, 16, 20], [0.25, 0.75])`     |
 | Sample and population variance | `variance([1, 2, 3], sample = True)`                                 |
