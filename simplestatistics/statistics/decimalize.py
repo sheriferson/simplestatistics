@@ -1,7 +1,8 @@
 from decimal import *
 
 def decimalize(data):
-    """Utility function converting all inputs to Decimal,
+    """
+    Utility function converting all inputs to Decimal,
     streamlines input types for other statistics functions.
 
     Args:
@@ -18,12 +19,11 @@ def decimalize(data):
             a list or tuple of numerics was supplied as data.
         
     Examples:
+
         >>> decimalize(1)
         Decimal('1')
-        
         >>> decimalize([1,2,3])
         [Decimal('1'), Decimal('2'), Decimal('3')]
-
         >>> decimalize((1,2,3))
         [Decimal('1'), Decimal('2'), Decimal('3')]
 

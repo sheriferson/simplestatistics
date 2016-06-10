@@ -12,6 +12,10 @@ Date TBD
 
 ### Improved
 
+- Reorganized documentation.
+
+### Improved
+
 - 100% test coverage
 
 ## 0.1.3
