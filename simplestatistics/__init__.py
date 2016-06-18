@@ -11,6 +11,7 @@ from .statistics.sum import sum
 from .statistics.factorial import factorial
 from .statistics.choose import choose
 from .statistics.binomial import binomial
+from .statistics.normal import normal
 
 from .statistics.quantile import quantile
 

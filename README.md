@@ -91,16 +91,13 @@ nosetests --with-doctest
 
 #### Distributions
 
-| Function                       | Example                                                              |
-|--------------------------------|----------------------------------------------------------------------|
-| Factorial                      | `factorial(20)` or `factorial([1, 5, 20])`                           |
-| Choose                         | `choose(5, 3)`                                                       |
-| Binomial distribution          | `binomial(4, 12, 0.2)` or `binomial([3,4,5], 12, 0.5)`               |
-| One-sample t-test              | `t_test([1, 2, 3, 4, 5, 6], 3.385)`                                  |
-
-### Coming soon
-
-- A lot more functions.
+| Function              | Example                                                |
+|-----------------------|--------------------------------------------------------|
+| Factorial             | `factorial(20)` or `factorial([1, 5, 20])`             |
+| Choose                | `choose(5, 3)`                                         |
+| Normal distribution   | `normal(4, 8, 2)` or `normal([1, 4], 8, 2)`            |
+| Binomial distribution | `binomial(4, 12, 0.2)` or `binomial([3,4,5], 12, 0.5)` |
+| One-sample t-test     | `t_test([1, 2, 3, 4, 5, 6], 3.385)`                    |
 
 ### Spirit and rules
 

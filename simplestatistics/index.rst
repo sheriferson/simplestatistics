@@ -156,6 +156,11 @@ Choose
 
 .. autofunction:: simplestatistics.choose
 
+Normal distribution
+^^^^^^^^^^^^^^^^^^^
+
+.. autofunction:: simplestatistics.normal
+
 Binomial distribution
 ^^^^^^^^^^^^^^^^^^^^^
 
