@@ -67,9 +67,6 @@ def binomial(k, n, p):
     if type(k) in [int, float]:
         return(binom_single_calculation(k, n, p))
     elif type(k) in [list, tuple]:
-        binom_distribution_list = []
-        
-        for value in k:
-            binom_distribution_list.append(binom_single_calculation(value, n, p))
+        binom_distribution_list = [binom_single_calculation(value, n, p) for value in k]
 
         return(binom_distribution_list)

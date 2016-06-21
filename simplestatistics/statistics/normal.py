@@ -67,9 +67,6 @@ def normal(x, mean, standard_deviation):
     if type(x) in [int, float]:
         return(norm_single_calculation(x, mean, standard_deviation))
     elif type(x) in [list, tuple]:
-        norm_distribution_list = []
-
-        for value in x:
-            norm_distribution_list.append(norm_single_calculation(value, mean, standard_deviation))
+        norm_distribution_list = [norm_single_calculation(value, mean, standard_deviation) for value in x]
 
         return(norm_distribution_list)
