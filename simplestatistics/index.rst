@@ -87,6 +87,11 @@ Quantiles
 
 .. autofunction:: simplestatistics.quantile
 
+Kurtosis
+^^^^^^^^
+
+.. autofunction:: simplestatistics.kurtosis
+
 Product
 ^^^^^^^
 

@@ -9,6 +9,9 @@ Date TBD
 - `factorial()`
 - `choose()`
 - `binomial()` to calculate binomial distribution probabilities
+- `normal()` to calculate normal distribution probabilities
+- `kurtosis()` to calculate kurtosis/"tailedness" of a probability
+distribution of a variable
 
 ### Improved
 
