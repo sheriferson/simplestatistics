@@ -64,17 +64,18 @@ nosetests --with-doctest
 | Max       | `max([1, 2, 3])`                                                 |
 | Sum       | `sum([1, 2, 3.5])`                                               |
 | Quantiles | `quantile([3, 6, 7, 8, 8, 9, 10, 13, 15, 16, 20], [0.25, 0.75])` |
-| Kurtosis  | `kurtosis([1, 2, 3, 4, 5])`                                      |
 | Product   | `product([1.25, 2.75], [2.5, 3.40])`                             |
 
 #### Measures of central tendency
 
-| Function                       | Example                                                              |
-|--------------------------------|----------------------------------------------------------------------|
-| Mean                           | `mean([1, 2, 3])`                                                    |
-| Median                         | `median([10, 2, -5, -1])`                                            |
-| Mode                           | `mode([2, 1, 3, 2, 1])`                                              |
-| Geometric mean                 | `geometric_mean([1, 10])`                                            |
+| Function       | Example                     |
+|----------------|-----------------------------|
+| Mean           | `mean([1, 2, 3])`           |
+| Median         | `median([10, 2, -5, -1])`   |
+| Mode           | `mode([2, 1, 3, 2, 1])`     |
+| Geometric mean | `geometric_mean([1, 10])`   |
+| Kurtosis       | `kurtosis([1, 2, 3, 4, 5])` |
+| Skew           | `skew([1, 2, 5])`           |
 
 #### Measures of dispersion
 

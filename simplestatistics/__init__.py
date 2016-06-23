@@ -3,7 +3,6 @@ from .statistics.min import min
 from .statistics.max import max
 from .statistics.sum import sum
 from .statistics.quantile import quantile
-from .statistics.kurtosis import kurtosis
 from .statistics.product import product
 
 # measures of central tendency
@@ -11,6 +10,8 @@ from .statistics.mean import mean
 from .statistics.median import median
 from .statistics.mode import mode
 from .statistics.geometric_mean import geometric_mean
+from .statistics.skew import skew
+from .statistics.kurtosis import kurtosis
 
 # measures of dispersion
 from .statistics.variance import variance

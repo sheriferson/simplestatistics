@@ -87,11 +87,6 @@ Quantiles
 
 .. autofunction:: simplestatistics.quantile
 
-Kurtosis
-^^^^^^^^
-
-.. autofunction:: simplestatistics.kurtosis
-
 Product
 ^^^^^^^
 
@@ -120,6 +115,15 @@ Geometric mean
 
 .. autofunction:: simplestatistics.geometric_mean
 
+Skewness
+^^^^^^^^
+
+.. autofunction:: simplestatistics.skew
+
+Kurtosis
+^^^^^^^^
+
+.. autofunction:: simplestatistics.kurtosis
 
 Measures of dispersion
 ----------------------

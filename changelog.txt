@@ -10,8 +10,9 @@ Date TBD
 - `choose()`
 - `binomial()` to calculate binomial distribution probabilities
 - `normal()` to calculate normal distribution probabilities
-- `kurtosis()` to calculate kurtosis/"tailedness" of a probability
-distribution of a variable
+- `kurtosis()` to calculate kurtosis/"tailedness" of a probability distribution of a variable
+_ `skew()` to calculate Pearson's moment coefficient of skewness
+
 
 ### Improved
 

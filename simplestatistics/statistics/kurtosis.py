@@ -10,7 +10,7 @@ def kurtosis(x):
     `Kurtosis`_ is a descriptor of the shape of a probability distribution. It is a measure of the "tailedness"
     of the probability distribution of a variable.
 
-    .. _`Kurtosis` https://en.wikipedia.org/wiki/Kurtosis
+    .. _`Kurtosis`: https://en.wikipedia.org/wiki/Kurtosis
 
     There are several ways of calculating kurtosis. See `this page`_ for a reference.
 
