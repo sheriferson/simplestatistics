@@ -1,6 +1,6 @@
 # simplestatistics changelog
 
-## x.x.x
+## 0.1.5
 
 Date TBD
 
