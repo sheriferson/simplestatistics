@@ -51,7 +51,7 @@ def skew(x):
     if type(x) in [int, float]:
         return(None)
 
-    mean_x = mean(x)
+    mean_x = decimalize(mean(x))
     n = len(x)
 
     m2 = sum([pow((value - mean_x), 2) for value in x]) * (1/n)

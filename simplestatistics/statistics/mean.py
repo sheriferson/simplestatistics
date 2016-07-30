@@ -1,6 +1,8 @@
 # I need sane division that returns a float not int
 from __future__ import division
 
+from .decimalize import decimalize
+
 def mean(data):
     """
     The mean_, or *average*, is "the sum of values divided by the number of values".
@@ -29,5 +31,6 @@ def mean(data):
         >>> mean([-1, 0, 1, 2, 3])
         1.0
     """
-    return sum(data) / len(data)
+    data = decimalize(data)
+    return float(sum(data) / len(data))
 

@@ -43,6 +43,7 @@ def t_test(sample, x):
 
     sample = decimalize(sample)
     x = decimalize(x)
+    mean_sample = decimalize(mean(sample))
 
     # Square root the length of the sample
     rootN = pow(len(sample), 0.5)
@@ -53,5 +54,5 @@ def t_test(sample, x):
 
     # Compute the known value against the sample,
     # returning the t value
-    t_statistic = ((mean(sample) - x) / sample_sd) * rootN
+    t_statistic = ((mean_sample - x) / sample_sd) * rootN
     return(float(t_statistic))

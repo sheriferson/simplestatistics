@@ -1,4 +1,5 @@
 from .mean import mean
+from .decimalize import decimalize
 from .standard_deviation import standard_deviation
 
 def z_scores(data):
@@ -39,9 +40,9 @@ def z_scores(data):
         if len(data) < 2:
             return(None)
 
-        mean_of_data = mean(data)
-        sd_of_data = standard_deviation(data)
+        mean_of_data = decimalize(mean(data))
+        sd_of_data = decimalize(standard_deviation(data))
 
-        z_scores = [((mean_of_data - float(ii)) / sd_of_data) for ii in data]
+        z_scores = [float((mean_of_data - ii) / sd_of_data) for ii in data]
         return(z_scores)
 

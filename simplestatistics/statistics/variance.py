@@ -35,9 +35,9 @@ def variance(data, sample = True):
         return(None)
 
     data = decimalize(data)
-    m = mean(data)
+    m = decimalize(mean(data))
     if sample:
-        return(float(sum([pow(x -m, 2) for x in data]) / (len(data) - 1)))
+        return(float(sum([pow(x - m, 2) for x in data]) / (len(data) - 1)))
     else:
         return(float(mean([pow(x - m, 2) for x in data])))
 
