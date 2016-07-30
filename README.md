@@ -85,6 +85,12 @@ nosetests --with-doctest
 | Standard deviation             | `standard_deviation([1, 2, 3])`                                      |
 | Standard scores (z-scores)     | `z_scores([-2, -1, 0, 1, 2])`                                        |
 
+#### Linear regression
+
+| Function                 | Example                                                     |
+|--------------------------|-------------------------------------------------------------|
+| Simple linear regression | `linear_regression([1, 2, 3, 4, 5], [4, 4.5, 5.5, 5.3, 6])` |
+
 #### Similarity
 
 | Function                       | Example                                                              |
@@ -103,7 +109,7 @@ nosetests --with-doctest
 
 ### Spirit and rules
 
-- Everything should be implemented in raw, organic, locally sourced python.
+- Everything should be implemented in raw, organic, locally sourced Python.
 - Use libraries only if you have to and only when unrelated to the math/statistics. For example, `from functools import reduce` to make `reduce` available for those using python3. That's okay, because it's about making Python work and not about making the stats easier.
 - It's okay to use operators and functions if they correspond to regular calculator buttons. For example, all calculators have a built-in square root function, so there is no need to implement that ourselves, we can use `math.sqrt()`.
 Anything beyond that, like `mean`, `median`, we have to write ourselves.

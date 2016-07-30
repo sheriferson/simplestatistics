@@ -12,6 +12,8 @@ Date TBD
 - `normal()` to calculate normal distribution probabilities
 - `kurtosis()` to calculate kurtosis/"tailedness" of a probability distribution of a variable
 _ `skew()` to calculate Pearson's moment coefficient of skewness
+- `linear_regression()` to calculate slope (m) and y intercept (b) of line of
+best fit.
 
 
 ### Improved

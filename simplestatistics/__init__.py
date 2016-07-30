@@ -21,6 +21,9 @@ from .statistics.standard_deviation import standard_deviation
 from .statistics.correlate import correlate
 from .statistics.z_scores import z_scores
 
+# linear regression
+from .statistics.linear_regression import linear_regression
+
 # distributions
 from .statistics.factorial import factorial
 from .statistics.choose import choose

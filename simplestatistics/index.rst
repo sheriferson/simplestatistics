@@ -143,6 +143,11 @@ Standard scores (z scores)
 
 .. autofunction:: simplestatistics.z_scores
 
+Linear regression
+-----------------
+
+.. autofunction:: simplestatistics.linear_regression
+
 Similarity
 ----------
 
