@@ -12,7 +12,8 @@ def linear_regression(x, y, decimals=2):
     """
     This is a `simple linear regression`_ that finds the line of best fit based on
     a set of points. It uses the least sum of squares to find the slope (:math:`m`)
-    and y-intercept (:math:`b`).
+    and y-intercept (:math:`b`). Maximum number of decimals can be set with optional
+    argument decimals.
 
     .. _`simple linear regression`: https://en.wikipedia.org/wiki/Linear_regression
 
