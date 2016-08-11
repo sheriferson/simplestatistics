@@ -8,7 +8,7 @@ from .mean import mean
 from .product import product
 from .sum import sum
 
-def linear_regression(x, y):
+def linear_regression(x, y, decimals=2):
     """
     This is a `simple linear regression`_ that finds the line of best fit based on
     a set of points. It uses the least sum of squares to find the slope (:math:`m`)
@@ -35,6 +35,8 @@ def linear_regression(x, y):
         (0.48, 3.62)
         >>> linear_regression([1, 2, 3, 4, 5], [2, 2.9, 3.95, 5.1, 5.9])
         (1.0, 0.97)
+        >>> linear_regression([0, 1, 2, 3, 4], [1.429, 4.554, 7.679, 1.804, 13.929], decimals=3)
+        (2.225, 1.429)
         >>> linear_regression((1, 2), (3, 3.5))
         (0.5, 2.5)
         >>> linear_regression([1], [2])
@@ -69,4 +71,4 @@ def linear_regression(x, y):
     # calculate y intercept
     b = Decimal(mean_y) - (m * Decimal(mean_x))
 
-    return(round(m, 2), round(b, 2))
+    return(round(m, decimals), round(b, decimals))
