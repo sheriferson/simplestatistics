@@ -23,6 +23,7 @@ from .statistics.z_scores import z_scores
 
 # linear regression
 from .statistics.linear_regression import linear_regression
+from .statistics.linear_regression_line import linear_regression_line
 
 # distributions
 from .statistics.factorial import factorial

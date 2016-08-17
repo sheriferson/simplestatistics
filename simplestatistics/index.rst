@@ -146,7 +146,15 @@ Standard scores (z scores)
 Linear regression
 -----------------
 
+Linear regression
+-----------------
+
 .. autofunction:: simplestatistics.linear_regression
+
+Linear regression line function
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. autofunction:: simplestatistics.linear_regression_line
 
 Similarity
 ----------

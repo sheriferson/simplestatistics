@@ -1,5 +1,15 @@
 # simplestatistics changelog
 
+## 0.1.x
+
+TBD
+
+### Added
+
+- `linear_regression_line()` returns a function that, provided with a (m, b)
+tuple, where m is the slope and b is the y intercept, calculates y values
+based on given x values.
+
 ## 0.1.5
 
 2016-07-30

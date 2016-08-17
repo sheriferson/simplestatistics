@@ -87,9 +87,10 @@ nosetests --with-doctest
 
 #### Linear regression
 
-| Function                 | Example                                                     |
-|--------------------------|-------------------------------------------------------------|
-| Simple linear regression | `linear_regression([1, 2, 3, 4, 5], [4, 4.5, 5.5, 5.3, 6])` |
+| Function                                  | Example                                                     |
+|-------------------------------------------|-------------------------------------------------------------|
+| Simple linear regression                  | `linear_regression([1, 2, 3, 4, 5], [4, 4.5, 5.5, 5.3, 6])` |
+| Linear regression line function generator | `linear_regression_line([.5, 9.5])([1, 2, 3])`              |
 
 #### Similarity
 
