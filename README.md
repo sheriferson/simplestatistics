@@ -116,3 +116,9 @@ nosetests --with-doctest
 Anything beyond that, like `mean`, `median`, we have to write ourselves.
 
 Pull requests are welcome!
+
+### Contributors
+
+- Jim Anderson ([jhowardanderson](https://github.com/jhowardanderson))
+- Pierre-Selim ([PierreSelim](https://github.com/PierreSelim))
+- Tom MacWright ([tmcw](https://github.com/tmcw))
