@@ -147,7 +147,7 @@ Linear regression
 -----------------
 
 Linear regression
------------------
+^^^^^^^^^^^^^^^^^
 
 .. autofunction:: simplestatistics.linear_regression
 
