@@ -74,19 +74,21 @@ nosetests --with-doctest
 
 #### Measures of central tendency
 
-| Function           | Example                     |
-|--------------------|-----------------------------|
-| [Mean][]           | `mean([1, 2, 3])`           |
-| [Median][]         | `median([10, 2, -5, -1])`   |
-| [Mode][]           | `mode([2, 1, 3, 2, 1])`     |
-| [Geometric mean][] | `geometric_mean([1, 10])`   |
-| [Skewness][]       | `skew([1, 2, 5])`           |
-| [Kurtosis][]       | `kurtosis([1, 2, 3, 4, 5])` |
+| Function             | Example                            |
+|----------------------|------------------------------------|
+| [Mean][]             | `mean([1, 2, 3])`                  |
+| [Median][]           | `median([10, 2, -5, -1])`          |
+| [Mode][]             | `mode([2, 1, 3, 2, 1])`            |
+| [Geometric mean][]   | `geometric_mean([1, 10])`          |
+| [Root mean square][] | `root_mean_square([1, -1, 1, -1])` |
+| [Skewness][]         | `skew([1, 2, 5])`                  |
+| [Kurtosis][]         | `kurtosis([1, 2, 3, 4, 5])`        |
 
 [Mean]: http://simplestatistics.readthedocs.io/en/latest/#mean
 [Median]: http://simplestatistics.readthedocs.io/en/latest/#median
 [Mode]: http://simplestatistics.readthedocs.io/en/latest/#mode
 [Geometric mean]: http://simplestatistics.readthedocs.io/en/latest/#geometric-mean
+[Root mean square]: http://simplestatistics.readthedocs.io/en/latest/#root-mean-square
 [Skewness]: http://simplestatistics.readthedocs.io/en/latest/#skewness
 [Kurtosis]: http://simplestatistics.readthedocs.io/en/latest/#kurtosis
 

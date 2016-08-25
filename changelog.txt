@@ -9,6 +9,7 @@ TBD
 - `linear_regression_line()` returns a function that, provided with a (m, b)
 tuple, where m is the slope and b is the y intercept, calculates y values
 based on given x values.
+- `root_mean_square()`
 
 ## 0.1.5
 

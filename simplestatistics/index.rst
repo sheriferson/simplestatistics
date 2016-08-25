@@ -115,6 +115,11 @@ Geometric mean
 
 .. autofunction:: simplestatistics.geometric_mean
 
+Root mean square
+^^^^^^^^^^^^^^^^
+
+.. autofunction:: simplestatistics.root_mean_square
+
 Skewness
 ^^^^^^^^
 
