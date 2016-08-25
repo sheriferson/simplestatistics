@@ -143,6 +143,11 @@ Standard deviation
 
 .. autofunction:: simplestatistics.standard_deviation
 
+Interquartile range
+^^^^^^^^^^^^^^^^^^^
+
+.. autofunction:: simplestatistics.interquartile_range
+
 Standard scores (z scores)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 

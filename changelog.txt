@@ -10,6 +10,7 @@ TBD
 tuple, where m is the slope and b is the y intercept, calculates y values
 based on given x values.
 - `root_mean_square()`
+- `interquartile_range()`
 
 ## 0.1.5
 

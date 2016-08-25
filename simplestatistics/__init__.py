@@ -17,10 +17,11 @@ from .statistics.kurtosis import kurtosis
 # measures of dispersion
 from .statistics.variance import variance
 from .statistics.standard_deviation import standard_deviation
+from .statistics.interquartile_range import interquartile_range
+from .statistics.z_scores import z_scores
 
 # similarity
 from .statistics.correlate import correlate
-from .statistics.z_scores import z_scores
 
 # linear regression
 from .statistics.linear_regression import linear_regression
