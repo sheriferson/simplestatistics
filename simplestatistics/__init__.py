@@ -18,6 +18,7 @@ from .statistics.kurtosis import kurtosis
 from .statistics.variance import variance
 from .statistics.standard_deviation import standard_deviation
 from .statistics.interquartile_range import interquartile_range
+from .statistics.sum_nth_power_deviations import sum_nth_power_deviations
 from .statistics.z_scores import z_scores
 
 # similarity

@@ -11,6 +11,7 @@ tuple, where m is the slope and b is the y intercept, calculates y values
 based on given x values.
 - `root_mean_square()`
 - `interquartile_range()`
+- `sum_nth_power_deviations()` to calculate sum of the deviations raised to Nth power.
 
 ## 0.1.5
 

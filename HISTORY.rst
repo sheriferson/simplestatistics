@@ -9,6 +9,7 @@ Added
 * ``linear_regression_line()``
 * ``root_mean_square()``
 * ``interquartile_range()``
+* ``sum_nth_power_deviations()``
 
 0.1.5 (2016-07-30)
 ~~~~~~~~~~~~~~~~~~

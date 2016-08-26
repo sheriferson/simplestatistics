@@ -148,6 +148,11 @@ Interquartile range
 
 .. autofunction:: simplestatistics.interquartile_range
 
+Sum of Nth power deviations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. autofunction:: simplestatistics.sum_nth_power_deviations
+
 Standard scores (z scores)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 

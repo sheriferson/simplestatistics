@@ -94,16 +94,18 @@ nosetests --with-doctest
 
 #### Measures of dispersion
 
-| Function                                   | Example                              |
-|--------------------------------------------|--------------------------------------|
-| [Sample and population variance][variance] | `variance([1, 2, 3], sample = True)` |
-| [Standard deviation][sd]                   | `standard_deviation([1, 2, 3])`      |
-| [Interquartile range][]                    | `interquartile_range([1, 3, 5, 7])`  |
-| [Standard scores (z-scores)][zscores]      | `z_scores([-2, -1, 0, 1, 2])`        |
+| Function                                   | Example                                      |
+|--------------------------------------------|----------------------------------------------|
+| [Sample and population variance][variance] | `variance([1, 2, 3], sample = True)`         |
+| [Standard deviation][sd]                   | `standard_deviation([1, 2, 3])`              |
+| [Interquartile range][]                    | `interquartile_range([1, 3, 5, 7])`          |
+| [Sum of Nth power deviations][sumndevs]    | `sum_nth_power_deviations([-1, 0, 2, 4], 3)` |
+| [Standard scores (z-scores)][zscores]      | `z_scores([-2, -1, 0, 1, 2])`                |
 
 [variance]: http://simplestatistics.readthedocs.io/en/latest/#variance
 [sd]: http://simplestatistics.readthedocs.io/en/latest/#standard-deviation
 [Interquartile range]: http://simplestatistics.readthedocs.io/en/latest/#interquartile-range
+[sumndevs]: http://simplestatistics.readthedocs.io/en/latest/#sum-of-nth-power-deviations
 [zscores]: http://simplestatistics.readthedocs.io/en/latest/#standard-scores-z-scores 
 
 #### Linear regression

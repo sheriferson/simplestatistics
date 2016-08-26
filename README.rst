@@ -122,23 +122,34 @@ Measures of central tendency
 Measures of dispersion
 ^^^^^^^^^^^^^^^^^^^^^^
 
-+----------------------------------------+-----------------------------------+
-| Function                               | Example                           |
-+========================================+===================================+
-| `Sample and population                 | ``variance([1, 2, 3], sample = Tr |
-| variance <http://simplestatistics.read | ue)``                             |
-| thedocs.io/en/latest/#variance>`__     |                                   |
-+----------------------------------------+-----------------------------------+
-| `Standard                              | ``standard_deviation([1, 2, 3])`` |
-| deviation <http://simplestatistics.rea |                                   |
-| dthedocs.io/en/latest/#standard-deviat |                                   |
-| ion>`__                                |                                   |
-+----------------------------------------+-----------------------------------+
-| `Standard scores                       | ``z_scores([-2, -1, 0, 1, 2])``   |
-| (z-scores) <http://simplestatistics.re |                                   |
-| adthedocs.io/en/latest/#standard-score |                                   |
-| s-z-scores>`__                         |                                   |
-+----------------------------------------+-----------------------------------+
++-------------------------------------+--------------------------------------+
+| Function                            | Example                              |
++=====================================+======================================+
+| `Sample and population              | ``variance([1, 2, 3], sample = True) |
+| variance <http://simplestatistics.r | ``                                   |
+| eadthedocs.io/en/latest/#variance>` |                                      |
+| __                                  |                                      |
++-------------------------------------+--------------------------------------+
+| `Standard                           | ``standard_deviation([1, 2, 3])``    |
+| deviation <http://simplestatistics. |                                      |
+| readthedocs.io/en/latest/#standard- |                                      |
+| deviation>`__                       |                                      |
++-------------------------------------+--------------------------------------+
+| `Interquartile                      | ``interquartile_range([1, 3, 5, 7])` |
+| range <http://simplestatistics.read | `                                    |
+| thedocs.io/en/latest/#interquartile |                                      |
+| -range>`__                          |                                      |
++-------------------------------------+--------------------------------------+
+| `Sum of Nth power                   | ``sum_nth_power_deviations([-1, 0, 2 |
+| deviations <http://simplestatistics | , 4], 3)``                           |
+| .readthedocs.io/en/latest/#sum-of-n |                                      |
+| th-power-deviations>`__             |                                      |
++-------------------------------------+--------------------------------------+
+| `Standard scores                    | ``z_scores([-2, -1, 0, 1, 2])``      |
+| (z-scores) <http://simplestatistics |                                      |
+| .readthedocs.io/en/latest/#standard |                                      |
+| -scores-z-scores>`__                |                                      |
++-------------------------------------+--------------------------------------+
 
 Linear regression
 ^^^^^^^^^^^^^^^^^
