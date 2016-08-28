@@ -11,8 +11,16 @@ for Python.
 `simplestatistics` is compatible with Python 2 & 3.
 ### Installation
 
+Install the [current PyPI release](https://pypi.python.org/pypi/simplestatistics):
+
 ```bash
 pip install simplestatistics
+```
+
+Or install the development version from GitHub:
+
+```bash
+pip install git+https://github.com/sheriferson/simplestatistics
 ```
 
 ### Usage
