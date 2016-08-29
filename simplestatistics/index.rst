@@ -115,6 +115,11 @@ Geometric mean
 
 .. autofunction:: simplestatistics.geometric_mean
 
+Harmonic mean
+^^^^^^^^^^^^^
+
+.. autofunction:: simplestatistics.harmonic_mean
+
 Root mean square
 ^^^^^^^^^^^^^^^^
 

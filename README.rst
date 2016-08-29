@@ -121,6 +121,8 @@ Measures of central tendency
 +---------------------------------------------------------------------------------------------+----------------------------------------+
 | `Geometric mean <http://simplestatistics.readthedocs.io/en/latest/#geometric-mean>`__       | ``geometric_mean([1, 10])``            |
 +---------------------------------------------------------------------------------------------+----------------------------------------+
+| `Harmonic mean <http://simplestatistics.readthedocs.io/en/latest/#harmonic-mean>`__         | ``harmonic_mean([1, 2, 4])``           |
++---------------------------------------------------------------------------------------------+----------------------------------------+
 | `Root mean square <http://simplestatistics.readthedocs.io/en/latest/#root-mean-square>`__   | ``root_mean_square([1, -1, 1, -1])``   |
 +---------------------------------------------------------------------------------------------+----------------------------------------+
 | `Skewness <http://simplestatistics.readthedocs.io/en/latest/#skewness>`__                   | ``skew([1, 2, 5])``                    |

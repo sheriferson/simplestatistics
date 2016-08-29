@@ -88,6 +88,7 @@ nosetests --with-doctest
 | [Median][]           | `median([10, 2, -5, -1])`          |
 | [Mode][]             | `mode([2, 1, 3, 2, 1])`            |
 | [Geometric mean][]   | `geometric_mean([1, 10])`          |
+| [Harmonic mean][]    | `harmonic_mean([1, 2, 4])`         |
 | [Root mean square][] | `root_mean_square([1, -1, 1, -1])` |
 | [Skewness][]         | `skew([1, 2, 5])`                  |
 | [Kurtosis][]         | `kurtosis([1, 2, 3, 4, 5])`        |
@@ -96,6 +97,7 @@ nosetests --with-doctest
 [Median]: http://simplestatistics.readthedocs.io/en/latest/#median
 [Mode]: http://simplestatistics.readthedocs.io/en/latest/#mode
 [Geometric mean]: http://simplestatistics.readthedocs.io/en/latest/#geometric-mean
+[Harmonic mean]: http://simplestatistics.readthedocs.io/en/latest/#harmonic-mean
 [Root mean square]: http://simplestatistics.readthedocs.io/en/latest/#root-mean-square
 [Skewness]: http://simplestatistics.readthedocs.io/en/latest/#skewness
 [Kurtosis]: http://simplestatistics.readthedocs.io/en/latest/#kurtosis

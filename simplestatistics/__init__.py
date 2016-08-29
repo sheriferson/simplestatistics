@@ -10,6 +10,7 @@ from .statistics.mean import mean
 from .statistics.median import median
 from .statistics.mode import mode
 from .statistics.geometric_mean import geometric_mean
+from .statistics.harmonic_mean import harmonic_mean
 from .statistics.root_mean_square import root_mean_square
 from .statistics.skew import skew
 from .statistics.kurtosis import kurtosis
