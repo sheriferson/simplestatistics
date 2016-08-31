@@ -152,6 +152,14 @@ nosetests --with-doctest
 [Binomial distribution]: http://simplestatistics.readthedocs.io/en/latest/#binomial-distribution
 [One-sample t-test]: http://simplestatistics.readthedocs.io/en/latest/#one-sample-t-test
 
+#### Classifiers
+
+| Function                         | Example                                                      |
+|----------------------------------|--------------------------------------------------------------|
+| [Naive Bayesian classifier][nbc] | See documentation for examples of how to train and classify. |
+
+[nbc]: http://simplestatistics.readthedocs.io/en/latest/#bayesian-classifier
+
 ### Spirit and rules
 
 - Everything should be implemented in raw, organic, locally sourced Python.

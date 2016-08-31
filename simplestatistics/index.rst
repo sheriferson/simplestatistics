@@ -222,6 +222,14 @@ Decimalize
 .. automodule:: simplestatistics.statistics.decimalize
     :members:
 
+Classifiers
+-----------
+
+Bayesian classifier
+^^^^^^^^^^^^^^^^^^^
+
+.. autoclass:: simplestatistics.bayesian_classifier
+    :members:
 
 Indices and tables
 ==================

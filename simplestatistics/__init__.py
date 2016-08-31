@@ -35,3 +35,6 @@ from .statistics.choose import choose
 from .statistics.normal import normal
 from .statistics.binomial import binomial
 from .statistics.t_test import t_test
+
+# classifiers
+from .statistics.bayesian_classifier import bayesian_classifier
