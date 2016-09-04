@@ -3,13 +3,11 @@ simplestatistics
 
 |Circle CI| |codecov| |Documentation Status| |PyPI version|
 
-`simple-statistics <https://github.com/tmcw/simple-statistics>`__ for
-Python.
+`simple-statistics <https://github.com/tmcw/simple-statistics>`__ for Python.
 
 ``simplestatistics`` is compatible with Python 2 & 3. ### Installation
 
-Install the `current PyPI
-release <https://pypi.python.org/pypi/simplestatistics>`__:
+Install the `current PyPI release <https://pypi.python.org/pypi/simplestatistics>`__:
 
 .. code:: bash
 
@@ -35,8 +33,7 @@ Usage
 Documentation
 ~~~~~~~~~~~~~
 
-You can `read the documentation
-online <http://simplestatistics.readthedocs.io/en/latest/>`__.
+You can `read the documentation online <http://simplestatistics.readthedocs.io/en/latest/>`__.
 
 Or you can generate it yourself:
 
@@ -71,41 +68,19 @@ Functions and examples
 Descriptive statistics
 ^^^^^^^^^^^^^^^^^^^^^^
 
-+---------------+------------------------------------------------------------+
-| Function      | Example                                                    |
-+===============+============================================================+
-| `Min <http:// | ``min([-3, 0, 3])``                                        |
-| simplestatist |                                                            |
-| ics.readthedo |                                                            |
-| cs.io/en/late |                                                            |
-| st/#min>`__   |                                                            |
-+---------------+------------------------------------------------------------+
-| `Max <http:// | ``max([1, 2, 3])``                                         |
-| simplestatist |                                                            |
-| ics.readthedo |                                                            |
-| cs.io/en/late |                                                            |
-| st/#max>`__   |                                                            |
-+---------------+------------------------------------------------------------+
-| `Sum <http:// | ``sum([1, 2, 3.5])``                                       |
-| simplestatist |                                                            |
-| ics.readthedo |                                                            |
-| cs.io/en/late |                                                            |
-| st/#sum>`__   |                                                            |
-+---------------+------------------------------------------------------------+
-| `Quantiles <h | ``quantile([3, 6, 7, 8, 8, 9, 10, 13, 15, 16, 20], [0.25,  |
-| ttp://simples | 0.75])``                                                   |
-| tatistics.rea |                                                            |
-| dthedocs.io/e |                                                            |
-| n/latest/#qua |                                                            |
-| ntiles>`__    |                                                            |
-+---------------+------------------------------------------------------------+
-| `Product <htt | ``product([1.25, 2.75], [2.5, 3.40])``                     |
-| p://simplesta |                                                            |
-| tistics.readt |                                                            |
-| hedocs.io/en/ |                                                            |
-| latest/#produ |                                                            |
-| ct>`__        |                                                            |
-+---------------+------------------------------------------------------------+
++-------------------------------------------------------------------------------+----------------------------------------------------------------------+
+| Function                                                                      | Example                                                              |
++===============================================================================+======================================================================+
+| `Min <http://simplestatistics.readthedocs.io/en/latest/#min>`__               | ``min([-3, 0, 3])``                                                  |
++-------------------------------------------------------------------------------+----------------------------------------------------------------------+
+| `Max <http://simplestatistics.readthedocs.io/en/latest/#max>`__               | ``max([1, 2, 3])``                                                   |
++-------------------------------------------------------------------------------+----------------------------------------------------------------------+
+| `Sum <http://simplestatistics.readthedocs.io/en/latest/#sum>`__               | ``sum([1, 2, 3.5])``                                                 |
++-------------------------------------------------------------------------------+----------------------------------------------------------------------+
+| `Quantiles <http://simplestatistics.readthedocs.io/en/latest/#quantiles>`__   | ``quantile([3, 6, 7, 8, 8, 9, 10, 13, 15, 16, 20], [0.25, 0.75])``   |
++-------------------------------------------------------------------------------+----------------------------------------------------------------------+
+| `Product <http://simplestatistics.readthedocs.io/en/latest/#product>`__       | ``product([1.25, 2.75], [2.5, 3.40])``                               |
++-------------------------------------------------------------------------------+----------------------------------------------------------------------+
 
 Measures of central tendency
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -133,123 +108,86 @@ Measures of central tendency
 Measures of dispersion
 ^^^^^^^^^^^^^^^^^^^^^^
 
-+-------------------------------------+--------------------------------------+
-| Function                            | Example                              |
-+=====================================+======================================+
-| `Sample and population              | ``variance([1, 2, 3], sample = True) |
-| variance <http://simplestatistics.r | ``                                   |
-| eadthedocs.io/en/latest/#variance>` |                                      |
-| __                                  |                                      |
-+-------------------------------------+--------------------------------------+
-| `Standard                           | ``standard_deviation([1, 2, 3])``    |
-| deviation <http://simplestatistics. |                                      |
-| readthedocs.io/en/latest/#standard- |                                      |
-| deviation>`__                       |                                      |
-+-------------------------------------+--------------------------------------+
-| `Interquartile                      | ``interquartile_range([1, 3, 5, 7])` |
-| range <http://simplestatistics.read | `                                    |
-| thedocs.io/en/latest/#interquartile |                                      |
-| -range>`__                          |                                      |
-+-------------------------------------+--------------------------------------+
-| `Sum of Nth power                   | ``sum_nth_power_deviations([-1, 0, 2 |
-| deviations <http://simplestatistics | , 4], 3)``                           |
-| .readthedocs.io/en/latest/#sum-of-n |                                      |
-| th-power-deviations>`__             |                                      |
-+-------------------------------------+--------------------------------------+
-| `Standard scores                    | ``z_scores([-2, -1, 0, 1, 2])``      |
-| (z-scores) <http://simplestatistics |                                      |
-| .readthedocs.io/en/latest/#standard |                                      |
-| -scores-z-scores>`__                |                                      |
-+-------------------------------------+--------------------------------------+
++-------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
+| Function                                                                                                          | Example                                          |
++===================================================================================================================+==================================================+
+| `Sample and population variance <http://simplestatistics.readthedocs.io/en/latest/#variance>`__                   | ``variance([1, 2, 3], sample = True)``           |
++-------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
+| `Standard deviation <http://simplestatistics.readthedocs.io/en/latest/#standard-deviation>`__                     | ``standard_deviation([1, 2, 3])``                |
++-------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
+| `Interquartile range <http://simplestatistics.readthedocs.io/en/latest/#interquartile-range>`__                   | ``interquartile_range([1, 3, 5, 7])``            |
++-------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
+| `Sum of Nth power deviations <http://simplestatistics.readthedocs.io/en/latest/#sum-of-nth-power-deviations>`__   | ``sum_nth_power_deviations([-1, 0, 2, 4], 3)``   |
++-------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
+| `Standard scores (z-scores) <http://simplestatistics.readthedocs.io/en/latest/#standard-scores-z-scores>`__       | ``z_scores([-2, -1, 0, 1, 2])``                  |
++-------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
 
 Linear regression
 ^^^^^^^^^^^^^^^^^
 
-+------------------------------------+---------------------------------------+
-| Function                           | Example                               |
-+====================================+=======================================+
-| `Simple linear                     | ``linear_regression([1, 2, 3, 4, 5],  |
-| regression <http://simplestatistic | [4, 4.5, 5.5, 5.3, 6])``              |
-| s.readthedocs.io/en/latest/#linear |                                       |
-| -regression>`__                    |                                       |
-+------------------------------------+---------------------------------------+
-| `Linear regression line function   | ``linear_regression_line([.5, 9.5])([ |
-| generator <http://simplestatistics | 1, 2, 3])``                           |
-| .readthedocs.io/en/latest/#linear- |                                       |
-| regression-line-function>`__       |                                       |
-+------------------------------------+---------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+
+| Function                                                                                                                            | Example                                                         |
++=====================================================================================================================================+=================================================================+
+| `Simple linear regression <http://simplestatistics.readthedocs.io/en/latest/#linear-regression>`__                                  | ``linear_regression([1, 2, 3, 4, 5], [4, 4.5, 5.5, 5.3, 6])``   |
++-------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+
+| `Linear regression line function generator <http://simplestatistics.readthedocs.io/en/latest/#linear-regression-line-function>`__   | ``linear_regression_line([.5, 9.5])([1, 2, 3])``                |
++-------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------+
 
 Similarity
 ^^^^^^^^^^
 
-+----------------+-----------------------------------------------------------+
-| Function       | Example                                                   |
-+================+===========================================================+
-| `Correlation < | ``correlate([2, 1, 0, -1, -2, -3, -4, -5], [0, 1, 1, 2, 3 |
-| http://simples | , 2, 4, 5])``                                             |
-| tatistics.read |                                                           |
-| thedocs.io/en/ |                                                           |
-| latest/#correl |                                                           |
-| ation>`__      |                                                           |
-+----------------+-----------------------------------------------------------+
++-----------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| Function                                                                          | Example                                                                  |
++===================================================================================+==========================================================================+
+| `Correlation <http://simplestatistics.readthedocs.io/en/latest/#correlation>`__   | ``correlate([2, 1, 0, -1, -2, -3, -4, -5], [0, 1, 1, 2, 3, 2, 4, 5])``   |
++-----------------------------------------------------------------------------------+--------------------------------------------------------------------------+
 
 Distributions
 ^^^^^^^^^^^^^
 
-+-------------------------+--------------------------------------------------+
-| Function                | Example                                          |
-+=========================+==================================================+
-| `Factorial <http://simp | ``factorial(20)`` or ``factorial([1, 5, 20])``   |
-| lestatistics.readthedoc |                                                  |
-| s.io/en/latest/#factori |                                                  |
-| al>`__                  |                                                  |
-+-------------------------+--------------------------------------------------+
-| `Choose <http://simples | ``choose(5, 3)``                                 |
-| tatistics.readthedocs.i |                                                  |
-| o/en/latest/#choose>`__ |                                                  |
-+-------------------------+--------------------------------------------------+
-| `Normal                 | ``normal(4, 8, 2)`` or ``normal([1, 4], 8, 2)``  |
-| distribution <http://si |                                                  |
-| mplestatistics.readthed |                                                  |
-| ocs.io/en/latest/#norma |                                                  |
-| l-distribution>`__      |                                                  |
-+-------------------------+--------------------------------------------------+
-| `Binomial               | ``binomial(4, 12, 0.2)`` or                      |
-| distribution <http://si | ``binomial([3,4,5], 12, 0.5)``                   |
-| mplestatistics.readthed |                                                  |
-| ocs.io/en/latest/#binom |                                                  |
-| ial-distribution>`__    |                                                  |
-+-------------------------+--------------------------------------------------+
-| `One-sample             | ``t_test([1, 2, 3, 4, 5, 6], 3.385)``            |
-| t-test <http://simplest |                                                  |
-| atistics.readthedocs.io |                                                  |
-| /en/latest/#one-sample- |                                                  |
-| t-test>`__              |                                                  |
-+-------------------------+--------------------------------------------------+
++-------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
+| Function                                                                                              | Example                                                      |
++=======================================================================================================+==============================================================+
+| `Factorial <http://simplestatistics.readthedocs.io/en/latest/#factorial>`__                           | ``factorial(20)`` or ``factorial([1, 5, 20])``               |
++-------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
+| `Choose <http://simplestatistics.readthedocs.io/en/latest/#choose>`__                                 | ``choose(5, 3)``                                             |
++-------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
+| `Normal distribution <http://simplestatistics.readthedocs.io/en/latest/#normal-distribution>`__       | ``normal(4, 8, 2)`` or ``normal([1, 4], 8, 2)``              |
++-------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
+| `Binomial distribution <http://simplestatistics.readthedocs.io/en/latest/#binomial-distribution>`__   | ``binomial(4, 12, 0.2)`` or ``binomial([3,4,5], 12, 0.5)``   |
++-------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
+| `One-sample t-test <http://simplestatistics.readthedocs.io/en/latest/#one-sample-t-test>`__           | ``t_test([1, 2, 3, 4, 5, 6], 3.385)``                        |
++-------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
+
+Classifiers
+^^^^^^^^^^^
+
++---------------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
+| Function                                                                                                | Example                                                        |
++=========================================================================================================+================================================================+
+| `Naive Bayesian classifier <http://simplestatistics.readthedocs.io/en/latest/#bayesian-classifier>`__   | See documentation for examples of how to train and classify.   |
++---------------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
+| `Perceptron <http://simplestatistics.readthedocs.io/en/latest/#perceptron>`__                           | See documentation for examples of how to train and classify.   |
++---------------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
 
 Spirit and rules
 ~~~~~~~~~~~~~~~~
 
--  Everything should be implemented in raw, organic, locally sourced
-   Python.
--  Use libraries only if you have to and only when unrelated to the
-   math/statistics. For example, ``from functools import reduce`` to
-   make ``reduce`` available for those using python3. That's okay,
-   because it's about making Python work and not about making the stats
-   easier.
--  It's okay to use operators and functions if they correspond to
-   regular calculator buttons. For example, all calculators have a
-   built-in square root function, so there is no need to implement that
-   ourselves, we can use ``math.sqrt()``. Anything beyond that, like
-   ``mean``, ``median``, we have to write ourselves.
+-  Everything should be implemented in raw, organic, locally sourced Python.
+-  Use libraries only if you have to and only when unrelated to the math/statistics. For example,
+   ``from functools import reduce`` to make ``reduce`` available for those using python3. That's
+   okay, because it's about making Python work and not about making the stats easier.
+-  It's okay to use operators and functions if they correspond to regular calculator buttons. For
+   example, all calculators have a built-in square root function, so there is no need to implement
+   that ourselves, we can use ``math.sqrt()``. Anything beyond that, like ``mean``, ``median``, we
+   have to write ourselves.
 
 Pull requests are welcome!
 
 Contributors
 ~~~~~~~~~~~~
 
--  Jim Anderson
-   (`jhowardanderson <https://github.com/jhowardanderson>`__)
+-  Jim Anderson (`jhowardanderson <https://github.com/jhowardanderson>`__)
 -  Pierre-Selim (`PierreSelim <https://github.com/PierreSelim>`__)
 -  Tom MacWright (`tmcw <https://github.com/tmcw>`__)
 

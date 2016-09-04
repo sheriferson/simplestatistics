@@ -231,6 +231,12 @@ Bayesian classifier
 .. autoclass:: simplestatistics.bayesian_classifier
     :members:
 
+Perceptron
+^^^^^^^^^^
+
+.. autoclass:: simplestatistics.perceptron
+    :members:
+
 Indices and tables
 ==================
 

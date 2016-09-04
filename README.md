@@ -157,8 +157,10 @@ nosetests --with-doctest
 | Function                         | Example                                                      |
 |----------------------------------|--------------------------------------------------------------|
 | [Naive Bayesian classifier][nbc] | See documentation for examples of how to train and classify. |
+| [Perceptron][]                   | See documentation for examples of how to train and classify. |
 
 [nbc]: http://simplestatistics.readthedocs.io/en/latest/#bayesian-classifier
+[Perceptron]: http://simplestatistics.readthedocs.io/en/latest/#perceptron
 
 ### Spirit and rules
 

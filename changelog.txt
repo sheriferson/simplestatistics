@@ -8,6 +8,7 @@ TBD
 
 - `harmonic_mean()`
 - `bayesian_classfier()`
+- `perceptron()`
 
 ## 0.2.0
 
