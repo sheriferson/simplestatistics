@@ -1,6 +1,6 @@
 from .linear_regression import linear_regression
 
-def linear_regression_line(mb_tuple):
+def linear_regression_line(mb):
     """
     Given the output of ``linear_regression()`` function, or provided with
     a tuple of ``(m, b)``, where ``m`` is the slope and ``b`` is the intercept,
@@ -8,7 +8,7 @@ def linear_regression_line(mb_tuple):
     based on given x values.
 
     Args:
-        mb_tuple: A tuple of (m, b) where m is the slope and b is the y intercept.
+        mb: A list or tuple of [m, b] or (m, b) where m is the slope and b is the y intercept.
 
     Returns:
         A function that accepts ints, floats, lists, or tuples of x values
@@ -21,10 +21,26 @@ def linear_regression_line(mb_tuple):
         [10.0, 10.5, 11.0]
         >>> linear_regression_line([.5, 9.5])([1, 2, 3])
         [10.0, 10.5, 11.0]
+
+        >>> linear_regression_line(9.5)
+        Traceback (most recent call last):
+            ...
+        TypeError: linear_regression_line() expects a list or tuple of (slope, intercept) or [slope, intercept] form.
+        >>> linear_regression_line([2, 3, 4])
+        Traceback (most recent call last):
+            ...
+        ValueError: The list or tuple containing the slope and intercept needs to be of length = 2.
     """
 
-    m = mb_tuple[0]
-    b = mb_tuple[1]
+    if type(mb) not in [list, tuple]:
+        raise TypeError('linear_regression_line() expects a list or tuple of (slope, intercept) or [slope, intercept] form.')
+
+    if len(mb) != 2:
+        raise ValueError('The list or tuple containing the slope and intercept needs to be of length = 2.')
+
+
+    m = mb[0]
+    b = mb[1]
 
     def line_function(x):
         # if int or float, return one value
