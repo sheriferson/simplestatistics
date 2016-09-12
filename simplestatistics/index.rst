@@ -138,6 +138,11 @@ Kurtosis
 Measures of dispersion
 ----------------------
 
+Coefficient of variation
+^^^^^^^^
+
+.. autofunction:: simplestatistics.coefficient_of_variation
+
 Variance
 ^^^^^^^^
 
