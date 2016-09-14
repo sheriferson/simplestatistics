@@ -3,11 +3,13 @@ simplestatistics
 
 |Circle CI| |codecov| |Documentation Status| |PyPI version|
 
-`simple-statistics <https://github.com/tmcw/simple-statistics>`__ for Python.
+`simple-statistics <https://github.com/tmcw/simple-statistics>`__ for
+Python.
 
 ``simplestatistics`` is compatible with Python 2 & 3. ### Installation
 
-Install the `current PyPI release <https://pypi.python.org/pypi/simplestatistics>`__:
+Install the `current PyPI
+release <https://pypi.python.org/pypi/simplestatistics>`__:
 
 .. code:: bash
 
@@ -33,7 +35,8 @@ Usage
 Documentation
 ~~~~~~~~~~~~~
 
-You can `read the documentation online <http://simplestatistics.readthedocs.io/en/latest/>`__.
+You can `read the documentation
+online <http://simplestatistics.readthedocs.io/en/latest/>`__.
 
 Or you can generate it yourself:
 
@@ -115,6 +118,8 @@ Measures of dispersion
 +-------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
 | `Standard deviation <http://simplestatistics.readthedocs.io/en/latest/#standard-deviation>`__                     | ``standard_deviation([1, 2, 3])``                |
 +-------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
+| `Coefficient of variation <http://simplestatistics.readthedocs.io/en/latest/#coefficient_of_variation>`__         | ``coefficient_of_variation([1, 2, 3])``          |
++-------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
 | `Interquartile range <http://simplestatistics.readthedocs.io/en/latest/#interquartile-range>`__                   | ``interquartile_range([1, 3, 5, 7])``            |
 +-------------------------------------------------------------------------------------------------------------------+--------------------------------------------------+
 | `Sum of Nth power deviations <http://simplestatistics.readthedocs.io/en/latest/#sum-of-nth-power-deviations>`__   | ``sum_nth_power_deviations([-1, 0, 2, 4], 3)``   |
@@ -173,21 +178,27 @@ Classifiers
 Spirit and rules
 ~~~~~~~~~~~~~~~~
 
--  Everything should be implemented in raw, organic, locally sourced Python.
--  Use libraries only if you have to and only when unrelated to the math/statistics. For example,
-   ``from functools import reduce`` to make ``reduce`` available for those using python3. That's
-   okay, because it's about making Python work and not about making the stats easier.
--  It's okay to use operators and functions if they correspond to regular calculator buttons. For
-   example, all calculators have a built-in square root function, so there is no need to implement
-   that ourselves, we can use ``math.sqrt()``. Anything beyond that, like ``mean``, ``median``, we
-   have to write ourselves.
+-  Everything should be implemented in raw, organic, locally sourced
+   Python.
+-  Use libraries only if you have to and only when unrelated to the
+   math/statistics. For example, ``from functools import reduce`` to
+   make ``reduce`` available for those using python3. That's okay,
+   because it's about making Python work and not about making the stats
+   easier.
+-  It's okay to use operators and functions if they correspond to
+   regular calculator buttons. For example, all calculators have a
+   built-in square root function, so there is no need to implement that
+   ourselves, we can use ``math.sqrt()``. Anything beyond that, like
+   ``mean``, ``median``, we have to write ourselves.
 
 Pull requests are welcome!
 
 Contributors
 ~~~~~~~~~~~~
 
--  Jim Anderson (`jhowardanderson <https://github.com/jhowardanderson>`__)
+-  Jim Anderson
+   (`jhowardanderson <https://github.com/jhowardanderson>`__)
+-  Lidiane Taquehara (`lidimayra <https://github.com/lidimayra>`__)
 -  Pierre-Selim (`PierreSelim <https://github.com/PierreSelim>`__)
 -  Tom MacWright (`tmcw <https://github.com/tmcw>`__)
 

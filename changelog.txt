@@ -9,6 +9,7 @@ TBD
 - `harmonic_mean()`
 - `bayesian_classfier()`
 - `perceptron()`
+- `coefficient_of_variation()`
 
 ## 0.2.0
 

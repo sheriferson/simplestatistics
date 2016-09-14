@@ -176,5 +176,6 @@ Pull requests are welcome!
 ### Contributors
 
 - Jim Anderson ([jhowardanderson](https://github.com/jhowardanderson))
+- Lidiane Taquehara ([lidimayra](https://github.com/lidimayra))
 - Pierre-Selim ([PierreSelim](https://github.com/PierreSelim))
 - Tom MacWright ([tmcw](https://github.com/tmcw))

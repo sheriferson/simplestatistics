@@ -9,6 +9,7 @@ Added
 * ``harmonic_mean()``
 * ``bayesian_classifier()``
 * ``perceptron()``
+* ``coefficient_of_variation()``
 
 0.2.0 (2016-08-27)
 -----------
