@@ -35,7 +35,7 @@ def standard_deviation(data, sample = True):
 
         >>> standard_deviation([1, 2, 3])
         1.0
-        >>> ss.standard_deviation([1, 2, 3], False)
+        >>> standard_deviation([1, 2, 3], False)
         0.816496580927726
         >>> standard_deviation([1, 2, 3, 4])
         1.2909944487358056

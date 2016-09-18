@@ -14,7 +14,7 @@ def coefficient_of_variation(data, sample = True):
     Examples:
         >>> coefficient_of_variation([1, 2, 3])
         0.5
-        >>> ss.coefficient_of_variation([1, 2, 3], False)
+        >>> coefficient_of_variation([1, 2, 3], False)
         0.408248290463863
         >>> coefficient_of_variation([1, 2, 3, 4])
         0.5163977794943222
