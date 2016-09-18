@@ -1,7 +1,7 @@
 import math
 from .variance import variance
 
-def standard_deviation(data):
+def standard_deviation(data, sample = True):
     """
     The `standard deviation`_ is the square root of variance_ (the sum of squared deviations
     from the mean).
@@ -25,6 +25,8 @@ def standard_deviation(data):
 
     Args:
         data: A list of numerical objects.
+        sample: A boolean value. If True, calculates standard deviation for
+          sample. If False, calculates standard deviation for population.
 
     Returns:
         A float object.
@@ -33,11 +35,11 @@ def standard_deviation(data):
 
         >>> standard_deviation([1, 2, 3])
         1.0
+        >>> ss.standard_deviation([1, 2, 3], False)
+        0.816496580927726
         >>> standard_deviation([1, 2, 3, 4])
         1.2909944487358056
         >>> standard_deviation([-1, 0, 1, 2, 3, 4])
         1.8708286933869707
     """
-    return math.sqrt(variance(data))
-
-
+    return math.sqrt(variance(data, sample))
