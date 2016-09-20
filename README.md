@@ -104,14 +104,14 @@ nosetests --with-doctest
 
 #### Measures of dispersion
 
-| Function                                              | Example                                               |
-|-------------------------------------------------------|-------------------------------------------------------|
-| [Sample and population variance][variance]            | `variance([1, 2, 3], sample = True)`                  |
-| [Sample and population Standard deviation][sd]        | `standard_deviation([1, 2, 3], sample = True)`        |
-| [Sample and population Coefficient of variation][cv]  | `coefficient_of_variation([1, 2, 3], sample = True)`  |
-| [Interquartile range][]                               | `interquartile_range([1, 3, 5, 7])`                   |
-| [Sum of Nth power deviations][sumndevs]               | `sum_nth_power_deviations([-1, 0, 2, 4], 3)`          |
-| [Standard scores (z-scores)][zscores]                 | `z_scores([-2, -1, 0, 1, 2])`                         |
+| Function                                                    | Example                                               |
+|-------------------------------------------------------------|-------------------------------------------------------|
+| [Sample and population variance][variance]                  | `variance([1, 2, 3], sample = True)`                  |
+| [Sample and population Standard deviation][sd]              | `standard_deviation([1, 2, 3], sample = True)`        |
+| [Sample and population Coefficient of variation][cv]        | `coefficient_of_variation([1, 2, 3], sample = True)`  |
+| [Interquartile range][]                                     | `interquartile_range([1, 3, 5, 7])`                   |
+| [Sum of Nth power deviations][sumndevs]                     | `sum_nth_power_deviations([-1, 0, 2, 4], 3)`          |
+| [Sample and population Standard scores (z-scores)][zscores] | `z_scores([-2, -1, 0, 1, 2], sample = True)`          |
 
 [variance]: http://simplestatistics.readthedocs.io/en/latest/#variance
 [sd]: http://simplestatistics.readthedocs.io/en/latest/#standard-deviation
