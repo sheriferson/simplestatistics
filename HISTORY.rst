@@ -9,7 +9,12 @@ Added
 * ``harmonic_mean()``
 * ``bayesian_classifier()``
 * ``perceptron()``
-* ``coefficient_of_variation()``
+* ``coefficient_of_variation()`` (Thanks to Lidiane Taquehara (lidimayra))
+
+Improved
+
+* Allow user to specify ``sample = False`` in ``tandard_deviation()``,
+``coefficient_of_variation()``, ``z_scores()`` (Thanks to Lidiane Taquehara (lidimayra))
 
 0.2.0 (2016-08-27)
 -----------
