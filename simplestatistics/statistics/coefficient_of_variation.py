@@ -9,6 +9,9 @@ def coefficient_of_variation(data, sample = True):
 
     Args:
         data: A list of numerical objects.
+        sample: A boolean value. If True, calculates coefficient of variation for
+          sample. If False, calculates coefficient of variation for population.
+
     Returns:
         A float object.
     Examples:
