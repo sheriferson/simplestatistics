@@ -139,7 +139,7 @@ Measures of dispersion
 ----------------------
 
 Coefficient of variation
-^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. autofunction:: simplestatistics.coefficient_of_variation
 
@@ -240,6 +240,15 @@ Perceptron
 ^^^^^^^^^^
 
 .. autoclass:: simplestatistics.perceptron
+    :members:
+
+Errors
+------
+
+Error function
+^^^^^^^^^^^^^^
+
+.. autoclass:: simplestatistics.error_function
     :members:
 
 Indices and tables

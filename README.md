@@ -164,6 +164,14 @@ nosetests --with-doctest
 [nbc]: http://simplestatistics.readthedocs.io/en/latest/#bayesian-classifier
 [Perceptron]: http://simplestatistics.readthedocs.io/en/latest/#perceptron
 
+#### Errors
+
+| Function                    | Example             |
+|-----------------------------|---------------------|
+| [Gauss error function][gef] | `error_function(1)` |
+
+[gef]: http://simplestatistics.readthedocs.io/en/latest/#error-function
+
 ### Spirit and rules
 
 - Everything should be implemented in raw, organic, locally sourced Python.

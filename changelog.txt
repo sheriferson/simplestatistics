@@ -1,5 +1,11 @@
 # simplestatistics changelog
 
+## 0.x.x
+
+TBD
+
+- `error_function()` - Gauss error function
+
 ## 0.2.5
 
 2016-09-24
