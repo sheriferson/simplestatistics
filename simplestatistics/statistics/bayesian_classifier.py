@@ -7,11 +7,10 @@ class bayesian_classifier():
 
     The implemention of this classifier is very closely modeled after the implementation
     in `simple-statistics <https://github.com/simple-statistics/simple-statistics>`_,
-    the javascript analogue of ``simplestatistics``. You can find the javascript implementation 
-    of the Bayesian classifier here_.
+    the javascript analogue of ``simplestatistics``. You can find the javascript implementation
+    of the Bayesian classifier `here <https://github.com/simple-statistics/simple-statistics/blob/master/src/bayesian_classifier.js>`_.
 
     .. _`naive Bayesian classifier`: https://en.wikipedia.org/wiki/Naive_Bayes_classifier
-    .. _`here`: https://github.com/simple-statistics/simple-statistics/blob/master/src/bayesian_classifier.js
 
     Examples:
         Making a seventy-five/twenty-five classification.
@@ -48,7 +47,7 @@ class bayesian_classifier():
         >>> model3.train({'species': 'cat', 'color': 'white'}, 'chair')
         >>> model3.score({'color': 'white'})
         [('chair', 0.2), ('animal', 0)]
-    
+
         >>> mod = bayesian_classifier()
         >>> mod.score({'color': 'purple'})
         Traceback (most recent call last):
