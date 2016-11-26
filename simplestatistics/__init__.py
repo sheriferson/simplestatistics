@@ -36,6 +36,7 @@ from .statistics.choose import choose
 from .statistics.normal import normal
 from .statistics.binomial import binomial
 from .statistics.t_test import t_test
+from .statistics.chi_squared_dist_table import chi_squared_dist_table
 
 # classifiers
 from .statistics.bayesian_classifier import bayesian_classifier

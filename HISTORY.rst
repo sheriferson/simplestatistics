@@ -4,7 +4,10 @@ History
 0.x.x (TBD)
 -----------
 
+Added
+
 * ``error_function()``
+* ``chi_squared_dist_table()``
 
 0.2.5. (2016-09-24)
 ------------

@@ -217,6 +217,10 @@ One-sample t test
 ^^^^^^^^^^^^^^^^^
 .. autofunction:: simplestatistics.t_test
     
+Chi Squared Distribution Table
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. autofunction:: simplestatistics.chi_squared_dist_table
 
 Utilities
 ---------

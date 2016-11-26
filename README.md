@@ -140,19 +140,21 @@ nosetests --with-doctest
 
 #### Distributions
 
-| Function                  | Example                                                |
-|---------------------------|--------------------------------------------------------|
-| [Factorial][]             | `factorial(20)` or `factorial([1, 5, 20])`             |
-| [Choose][]                | `choose(5, 3)`                                         |
-| [Normal distribution][]   | `normal(4, 8, 2)` or `normal([1, 4], 8, 2)`            |
-| [Binomial distribution][] | `binomial(4, 12, 0.2)` or `binomial([3,4,5], 12, 0.5)` |
-| [One-sample t-test][]     | `t_test([1, 2, 3, 4, 5, 6], 3.385)`                    |
+| Function                                   | Example                                                |
+|--------------------------------------------|--------------------------------------------------------|
+| [Factorial][]                              | `factorial(20)` or `factorial([1, 5, 20])`             |
+| [Choose][]                                 | `choose(5, 3)`                                         |
+| [Normal distribution][]                    | `normal(4, 8, 2)` or `normal([1, 4], 8, 2)`            |
+| [Binomial distribution][]                  | `binomial(4, 12, 0.2)` or `binomial([3,4,5], 12, 0.5)` |
+| [One-sample t-test][]                      | `t_test([1, 2, 3, 4, 5, 6], 3.385)`                    |
+| [Chi Squared Distribution Table][] | `chi_squared_dist_table(k = 10, p = .01)`              |
 
 [Factorial]: http://simplestatistics.readthedocs.io/en/latest/#factorial
 [Choose]: http://simplestatistics.readthedocs.io/en/latest/#choose
 [Normal distribution]: http://simplestatistics.readthedocs.io/en/latest/#normal-distribution
 [Binomial distribution]: http://simplestatistics.readthedocs.io/en/latest/#binomial-distribution
 [One-sample t-test]: http://simplestatistics.readthedocs.io/en/latest/#one-sample-t-test
+[Chi Squared Distribution Table]: http://simplestatistics.readthedocs.io/en/latest/#chi-squared-distribution-table
 
 #### Classifiers
 
