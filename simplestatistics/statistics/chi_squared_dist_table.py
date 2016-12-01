@@ -46,6 +46,16 @@ def chi_squared_dist_table(k=0, p=0):
         {0.975: 40.48}
         {0.99: 37.48}
         {0.995: 35.53}
+
+        >>> chi_squared_dist_table(5, 0.4)
+        Traceback (most recent call last):
+            ...
+        ValueError: If you provide a p value, it has to be one of 11 values. See documentation for more information.
+        >>> chi_squared_dist_table(95)
+        Traceback (most recent call last):
+            ...
+        ValueError: If you are providing k and/or p values, they have to be chosen from a list of values. See documentation for more information
+
     """
     chi_table = {
         1: {
