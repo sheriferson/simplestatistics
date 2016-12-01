@@ -213,6 +213,11 @@ Binomial distribution
 
 .. autofunction:: simplestatistics.binomial
 
+Bernoulli distribution
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. autofunction:: simplestatistics.bernoulli
+
 One-sample t test
 ^^^^^^^^^^^^^^^^^
 .. autofunction:: simplestatistics.t_test

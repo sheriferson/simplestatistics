@@ -8,6 +8,7 @@ Added
 
 * ``error_function()``
 * ``chi_squared_dist_table()``
+* ``bernoulli()``
 
 0.2.5. (2016-09-24)
 ------------
