@@ -147,6 +147,7 @@ nosetests --with-doctest
 | [Normal distribution][]            | `normal(4, 8, 2)` or `normal([1, 4], 8, 2)`            |
 | [Binomial distribution][]          | `binomial(4, 12, 0.2)` or `binomial([3,4,5], 12, 0.5)` |
 | [Bernoulli distribution][]         | `bernoulli(0.25)`                                      |
+| [Poisson distribution][]           | `poisson(3, [0, 1, 2, 3])`                             |
 | [One-sample t-test][]              | `t_test([1, 2, 3, 4, 5, 6], 3.385)`                    |
 | [Chi Squared Distribution Table][] | `chi_squared_dist_table(k = 10, p = .01)`              |
 
@@ -155,6 +156,7 @@ nosetests --with-doctest
 [Normal distribution]: http://simplestatistics.readthedocs.io/en/latest/#normal-distribution
 [Binomial distribution]: http://simplestatistics.readthedocs.io/en/latest/#binomial-distribution
 [Bernoulli distribution]: http://simplestatistics.readthedocs.io/en/latest/#bernoulli-distribution
+[Poisson distribution]: http://simplestatistics.readthedocs.io/en/latest/#poisson-distribution
 [One-sample t-test]: http://simplestatistics.readthedocs.io/en/latest/#one-sample-t-test
 [Chi Squared Distribution Table]: http://simplestatistics.readthedocs.io/en/latest/#chi-squared-distribution-table
 

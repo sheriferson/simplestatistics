@@ -9,6 +9,7 @@ TBD
 - `error_function()` - Gauss error function
 - `chi_squared_dist_table()` - A table of χ2 values vs p-values 
 - `bernoulli()` - the Bernoulli distribution
+- `poisson()` - the Poisson distribution
 
 ## 0.2.5
 

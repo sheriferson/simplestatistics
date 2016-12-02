@@ -218,6 +218,11 @@ Bernoulli distribution
 
 .. autofunction:: simplestatistics.bernoulli
 
+Poisson distribution
+^^^^^^^^^^^^^^^^^^^^
+
+.. autofunction:: simplestatistics.poisson
+
 One-sample t test
 ^^^^^^^^^^^^^^^^^
 .. autofunction:: simplestatistics.t_test

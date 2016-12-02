@@ -36,6 +36,7 @@ from .statistics.choose import choose
 from .statistics.normal import normal
 from .statistics.binomial import binomial
 from .statistics.bernoulli import bernoulli
+from .statistics.poisson import poisson
 from .statistics.t_test import t_test
 from .statistics.chi_squared_dist_table import chi_squared_dist_table
 
