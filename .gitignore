@@ -1,4 +1,5 @@
 _build/
+dist/
 htmlcov/
 *.pyc
 .coverage
