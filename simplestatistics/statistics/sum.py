@@ -8,9 +8,7 @@ def sum(data):
 
     .. _`Kahan summation algorithm`: https://en.wikipedia.org/wiki/Kahan_summation_algorithm
 
-    The implementation is modeled after that of `simple-statistics`_.
-
-    .. _`simple-statistics`: https://github.com/simple-statistics/simple-statistics/blob/master/src/sum.js
+    The implementation is modeled after that of `simple-statistics <https://github.com/simple-statistics/simple-statistics/blob/master/src/sum.js>`_.
 
     Args:
         data: A numeric built-in object or list of numeric objects.
