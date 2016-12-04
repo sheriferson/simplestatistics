@@ -1,8 +1,8 @@
 # simplestatistics changelog
 
-## 0.x.x
+## 0.3.0
 
-TBD
+2016-12-03
 
 ### Added
 
