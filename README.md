@@ -135,8 +135,10 @@ nosetests --with-doctest
 | Function        | Example                                                              |
 |-----------------|----------------------------------------------------------------------|
 | [Correlation][] | `correlate([2, 1, 0, -1, -2, -3, -4, -5], [0, 1, 1, 2, 3, 2, 4, 5])` |
+| [Covariance][]  | `covariance([1,2,3,4,5,6], [6,5,4,3,2,1])`                           |
 
 [Correlation]: http://simplestatistics.readthedocs.io/en/latest/#correlation
+[Covariance]: http://simplestatistics.readthedocs.io/en/latest/#covariance
 
 #### Distributions
 

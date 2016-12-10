@@ -189,6 +189,10 @@ Correlation
 
 .. autofunction:: simplestatistics.correlate
 
+Covariance
+^^^^^^^^^^
+
+.. autofunction:: simplestatistics.covariance
 
 Distributions
 -------------

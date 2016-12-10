@@ -1,5 +1,13 @@
 # simplestatistics changelog
 
+## 0.x.x
+
+TBD
+
+### Added
+
+- `covariance()` - calculate sample covariance
+
 ## 0.3.0
 
 2016-12-03

@@ -25,6 +25,7 @@ from .statistics.z_scores import z_scores
 
 # similarity
 from .statistics.correlate import correlate
+from .statistics.covariance import covariance
 
 # linear regression
 from .statistics.linear_regression import linear_regression
