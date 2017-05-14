@@ -7,6 +7,7 @@ TBD
 ### Added
 
 - `covariance()` - calculate sample covariance
+- `add_to_mean()` - calculates new mean after adding value(s)
 
 ## 0.3.0
 

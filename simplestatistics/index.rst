@@ -125,6 +125,11 @@ Root mean square
 
 .. autofunction:: simplestatistics.root_mean_square
 
+Add to mean
+^^^^^^^^^^^
+
+.. autofunction:: simplestatistics.add_to_mean
+
 Skewness
 ^^^^^^^^
 
