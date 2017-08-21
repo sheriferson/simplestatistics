@@ -12,7 +12,7 @@ def cosh(x, decimals=5):
     the Wikipedia page for hyperbolic functions:
 
         .. math::
-            \\text{sinh}(x) = \\frac{1 + e^{-2x}}{2e^{-x}}
+            \\text{cosh}(x) = \\frac{1 + e^{-2x}}{2e^{-x}}
 
     And a simpler equation found on this reference_ page by
     Erik Max Francis:
@@ -20,7 +20,7 @@ def cosh(x, decimals=5):
     .. _reference: http://www.alcyone.com/max/reference/maths/hyperbolic.html
 
         .. math::
-            \\text{sinh}(x) = \\frac{e^x + e^{-x}}{2}
+            \\text{cosh}(x) = \\frac{e^x + e^{-x}}{2}
 
     I implemented the second version for simplicity.
 
