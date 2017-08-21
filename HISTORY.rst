@@ -8,6 +8,7 @@ Added
 
 * ``covariance()``
 * ``add_to_mean()``
+* ``sinh()``
 
 0.3.0 (2016-12-03)
 -----------

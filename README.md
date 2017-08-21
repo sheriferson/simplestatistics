@@ -1,4 +1,4 @@
-## simplestatistics
+# simplestatistics
 
 [![Circle CI](https://circleci.com/gh/sheriferson/simplestatistics.svg?style=svg)](https://circleci.com/gh/sheriferson/simplestatistics)
 [![codecov](https://codecov.io/gh/sheriferson/simplestatistics/branch/master/graph/badge.svg)](https://codecov.io/gh/sheriferson/simplestatistics)
@@ -9,7 +9,10 @@
 for Python.
 
 `simplestatistics` is compatible with Python 2 & 3.
-### Installation
+
+<!-- TOC -->
+
+## Installation
 
 Install the [current PyPI release](https://pypi.python.org/pypi/simplestatistics):
 
@@ -23,7 +26,7 @@ Or install the development version from GitHub:
 pip install git+https://github.com/sheriferson/simplestatistics
 ```
 
-### Usage
+## Usage
 
 ```python
 >>> import simplestatistics as ss
@@ -33,7 +36,7 @@ pip install git+https://github.com/sheriferson/simplestatistics
 -0.3461277235039042
 ```
 
-### Documentation
+## Documentation
 
 You can [read the documentation online](http://simplestatistics.readthedocs.io/en/latest/).
 
@@ -47,7 +50,7 @@ make html
 
 Documentation will be generated in `_build/html/`.
 
-### Tests
+## Tests
 
 If you want coverage reports, you need to have [`coverage`](https://pypi.python.org/pypi/coverage) installed:
 
@@ -62,9 +65,9 @@ Otherwise, to just run the tests:
 nosetests --with-doctest
 ```
 
-### Functions and examples
+## Functions and examples
 
-#### Descriptive statistics
+### Descriptive statistics
 
 | Function      | Example                                                          |
 |---------------|------------------------------------------------------------------|
@@ -80,7 +83,7 @@ nosetests --with-doctest
 [Quantiles]: http://simplestatistics.readthedocs.io/en/latest/#quantiles
 [Product]: http://simplestatistics.readthedocs.io/en/latest/#product
 
-#### Measures of central tendency
+### Measures of central tendency
 
 | Function             | Example                            |
 |----------------------|------------------------------------|
@@ -104,7 +107,7 @@ nosetests --with-doctest
 [Skewness]: http://simplestatistics.readthedocs.io/en/latest/#skewness
 [Kurtosis]: http://simplestatistics.readthedocs.io/en/latest/#kurtosis
 
-#### Measures of dispersion
+### Measures of dispersion
 
 | Function                                                    | Example                                               |
 |-------------------------------------------------------------|-------------------------------------------------------|
@@ -122,7 +125,7 @@ nosetests --with-doctest
 [sumndevs]: http://simplestatistics.readthedocs.io/en/latest/#sum-of-nth-power-deviations
 [zscores]: http://simplestatistics.readthedocs.io/en/latest/#standard-scores-z-scores
 
-#### Linear regression
+### Linear regression
 
 | Function                                                | Example                                                     |
 |---------------------------------------------------------|-------------------------------------------------------------|
@@ -132,7 +135,7 @@ nosetests --with-doctest
 [linreg]: http://simplestatistics.readthedocs.io/en/latest/#linear-regression
 [linregline]: http://simplestatistics.readthedocs.io/en/latest/#linear-regression-line-function
 
-#### Similarity
+### Similarity
 
 | Function        | Example                                                              |
 |-----------------|----------------------------------------------------------------------|
@@ -142,7 +145,7 @@ nosetests --with-doctest
 [Correlation]: http://simplestatistics.readthedocs.io/en/latest/#correlation
 [Covariance]: http://simplestatistics.readthedocs.io/en/latest/#covariance
 
-#### Distributions
+### Distributions
 
 | Function                           | Example                                                |
 |------------------------------------|--------------------------------------------------------|
@@ -164,7 +167,7 @@ nosetests --with-doctest
 [One-sample t-test]: http://simplestatistics.readthedocs.io/en/latest/#one-sample-t-test
 [Chi Squared Distribution Table]: http://simplestatistics.readthedocs.io/en/latest/#chi-squared-distribution-table
 
-#### Classifiers
+### Classifiers
 
 | Function                         | Example                                                      |
 |----------------------------------|--------------------------------------------------------------|
@@ -174,7 +177,7 @@ nosetests --with-doctest
 [nbc]: http://simplestatistics.readthedocs.io/en/latest/#bayesian-classifier
 [Perceptron]: http://simplestatistics.readthedocs.io/en/latest/#perceptron
 
-#### Errors
+### Errors
 
 | Function                    | Example             |
 |-----------------------------|---------------------|
@@ -182,7 +185,15 @@ nosetests --with-doctest
 
 [gef]: http://simplestatistics.readthedocs.io/en/latest/#error-function
 
-### Spirit and rules
+### Hyperbolic functions
+
+| Function      | Example   |
+|---------------|-----------|
+| [sinh][hyper] | `sinh(2)` |
+
+[hyper]: https://en.wikipedia.org/wiki/Hyperbolic_function#Other_definitions
+
+## Spirit and rules
 
 - Everything should be implemented in raw, organic, locally sourced Python.
 - Use libraries only if you have to and only when unrelated to the math/statistics. For example, `from functools import reduce` to make `reduce` available for those using python3. That's okay, because it's about making Python work and not about making the stats easier.
@@ -191,7 +202,7 @@ Anything beyond that, like `mean`, `median`, we have to write ourselves.
 
 Pull requests are welcome!
 
-### Contributors
+## Contributors
 
 - Jim Anderson ([jhowardanderson](https://github.com/jhowardanderson))
 - Lidiane Taquehara ([lidimayra](https://github.com/lidimayra))

@@ -274,6 +274,15 @@ Error function
 .. autoclass:: simplestatistics.error_function
     :members:
 
+Hyperbolic functions
+--------------------
+
+sinh
+^^^^
+
+.. autoclass:: simplestatistics.sinh
+    :members:
+
 Indices and tables
 ==================
 

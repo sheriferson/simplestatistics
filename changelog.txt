@@ -8,6 +8,7 @@ TBD
 
 - `covariance()` - calculate sample covariance
 - `add_to_mean()` - calculates new mean after adding value(s)
+- `sinh()` - hyperbolic function (sinh)
 
 ## 0.3.0
 
@@ -16,7 +17,7 @@ TBD
 ### Added
 
 - `error_function()` - Gauss error function
-- `chi_squared_dist_table()` - A table of χ2 values vs p-values 
+- `chi_squared_dist_table()` - A table of χ2 values vs p-values
 - `bernoulli()` - the Bernoulli distribution
 - `poisson()` - the Poisson distribution
 

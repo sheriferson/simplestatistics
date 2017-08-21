@@ -1,3 +1,6 @@
+"""
+Importing all functions into simplestatistics namespace
+"""
 # descriptive statistics
 from .statistics.min import min
 from .statistics.max import max
@@ -48,3 +51,6 @@ from .statistics.perceptron import perceptron
 
 # errors
 from .statistics.error_function import error_function
+
+# hyperbolic functions
+from .statistics.sinh import sinh
