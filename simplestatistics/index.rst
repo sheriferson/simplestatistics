@@ -283,6 +283,12 @@ sinh
 .. autoclass:: simplestatistics.sinh
     :members:
 
+cosh
+^^^^
+
+.. autoclass:: simplestatistics.cosh
+    :members:
+
 Indices and tables
 ==================
 

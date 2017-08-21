@@ -187,9 +187,10 @@ nosetests --with-doctest
 
 ### Hyperbolic functions
 
-| Function      | Example   |
-|---------------|-----------|
-| [sinh][hyper] | `sinh(2)` |
+| Function      | Example     |
+|---------------|-------------|
+| [sinh][hyper] | `sinh(2)`   |
+| [cosh][hyper] | `cosh(2.5)` |
 
 [hyper]: https://en.wikipedia.org/wiki/Hyperbolic_function#Other_definitions
 

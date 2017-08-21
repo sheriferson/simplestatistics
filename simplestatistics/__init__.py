@@ -54,3 +54,4 @@ from .statistics.error_function import error_function
 
 # hyperbolic functions
 from .statistics.sinh import sinh
+from .statistics.cosh import cosh

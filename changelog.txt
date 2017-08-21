@@ -9,6 +9,7 @@ TBD
 - `covariance()` - calculate sample covariance
 - `add_to_mean()` - calculates new mean after adding value(s)
 - `sinh()` - hyperbolic function (sinh)
+- `cosh()` - hyperbolic function (cosh)
 
 ## 0.3.0
 
