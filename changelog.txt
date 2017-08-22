@@ -10,6 +10,7 @@ TBD
 - `add_to_mean()` - calculates new mean after adding value(s)
 - `sinh()` - hyperbolic function (sinh)
 - `cosh()` - hyperbolic function (cosh)
+- `tanh()` - hyperbolic function (tanh)
 
 ## 0.3.0
 

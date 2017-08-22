@@ -289,6 +289,12 @@ cosh
 .. autoclass:: simplestatistics.cosh
     :members:
 
+tanh
+^^^^
+
+.. autoclass:: simplestatistics.tanh
+    :members:
+
 Indices and tables
 ==================
 

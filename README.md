@@ -191,6 +191,7 @@ nosetests --with-doctest
 |---------------|-------------|
 | [sinh][hyper] | `sinh(2)`   |
 | [cosh][hyper] | `cosh(2.5)` |
+| [tanh][hyper] | `tanh(.2)`  |
 
 [hyper]: https://en.wikipedia.org/wiki/Hyperbolic_function#Other_definitions
 
