@@ -2,7 +2,7 @@ from .binomial import binomial
 
 def bernoulli(p, decimals = 2):
     """
-    The `Bernoulli Distribution`_ is, quoting from the Wikipedia page:
+    The `Bernoulli distribution`_ is, quoting from the Wikipedia page:
 
         The Bernoulli distribution is the probability discrete distribution of a random
         variable which takes value 1 with success probability p and value 0 with failure
@@ -10,7 +10,7 @@ def bernoulli(p, decimals = 2):
         where "1" is defined to mean "heads" and "0" is defined to mean "tails" (or vice versa).
         It is a special case of a Binomial Distribution where n = 1.
 
-    .. _ `bernoulli distribution`: https://en.wikipedia.org/wiki/Bernoulli_distribution
+    .. _`Bernoulli distribution`: https://en.wikipedia.org/wiki/Bernoulli_distribution
 
     Args:
         p: Int or float representing *p* (probability)
