@@ -2,9 +2,9 @@
 Importing all functions into simplestatistics namespace
 """
 # descriptive statistics
-from .statistics.min import min
-from .statistics.max import max
-from .statistics.sum import sum
+from .statistics.min import min # pylint: disable=redefined-builtin
+from .statistics.max import max # pylint: disable=redefined-builtin
+from .statistics.sum import sum # pylint: disable=redefined-builtin
 from .statistics.quantile import quantile
 from .statistics.product import product
 

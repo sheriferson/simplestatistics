@@ -1,16 +1,27 @@
+"""
+Implements chi_squared_dist_table() function.
+"""
+
 def chi_squared_dist_table(k=0, p=0):
     """
     From `Wikipedia <https://en.wikipedia.org/wiki/Chi-squared_distribution>`_.
 
-        The p-value is the probability of observing a test statistic at least as extreme in a chi-squared distribution. Accordingly, since the cumulative distribution function (CDF) for the appropriate degrees of freedom (df) gives the probability of having obtained a value less extreme than this point, subtracting the CDF value from 1 gives the p-value. The table below gives a number of p-values matching to :math:`\\chi^2` for the first 10 degrees of freedom.
+        The p-value is the probability of observing a test statistic at least as
+        extreme in a chi-squared distribution. Accordingly, since the cumulative
+        distribution function (CDF) for the appropriate degrees of freedom (df)
+        gives the probability of having obtained a value less extreme than this
+        point, subtracting the CDF value from 1 gives the p-value. The table below
+        gives a number of p-values matching to :math:`\\chi^2` for the first 10
+        degrees of freedom.
 
-    The ``chi_squared_dist_table`` function can either return the full table of :math:`\\chi^2`
-    vs. *p* values, or it can perform a lookup for a certain value if given *k* (degrees of freedom: df) or
-    *k* and *p* values.
+    The ``chi_squared_dist_table`` function can either return the full table of
+    :math:`\\chi^2` vs. *p* values, or it can perform a lookup for a certain value
+    if given *k* (degrees of freedom: df) or *k* and *p* values.
 
     *k* has to be one of the following values:
 
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 40, 50, 60, 70, 80, 90, 100
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
+    23, 24, 25, 26, 27, 28, 29, 30, 40, 50, 60, 70, 80, 90, 100
 
     *p* has to be one of the following values:
 
@@ -30,8 +41,8 @@ def chi_squared_dist_table(k=0, p=0):
         >>> chi_squared_dist_table(5, .01)
         15.09
         >>> x = chi_squared_dist_table()
-        >>> sorted(x.keys())
-        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 40, 50, 60, 70, 80, 90, 100]
+        >>> sorted(x.keys()) # doctest: +ELLIPSIS
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, ..., 100]
 
         >>> k60 = chi_squared_dist_table(60)
         >>> for p in sorted(k60.keys()): print({p: k60[p]})
@@ -47,14 +58,14 @@ def chi_squared_dist_table(k=0, p=0):
         {0.99: 37.48}
         {0.995: 35.53}
 
-        >>> chi_squared_dist_table(5, 0.4)
+        >>> chi_squared_dist_table(5, 0.4) # doctest: +ELLIPSIS
         Traceback (most recent call last):
             ...
-        ValueError: If you provide a p value, it has to be one of 11 values. See documentation for more information.
-        >>> chi_squared_dist_table(95)
+        ValueError: If you provide a p value, it has to be one of 11 values...
+        >>> chi_squared_dist_table(95) # doctest: +ELLIPSIS
         Traceback (most recent call last):
             ...
-        ValueError: If you are providing k and/or p values, they have to be chosen from a list of values. See documentation for more information
+        ValueError: If you are providing k and/or p values, they have to be chosen...
 
     """
     chi_table = {
@@ -552,7 +563,9 @@ def chi_squared_dist_table(k=0, p=0):
         elif p == 0:
             return(chi_table[k])
         else:
-            raise ValueError('If you provide a p value, it has to be one of 11 values. See documentation for more information.')
+            raise ValueError("If you provide a p value, it has to be one of 11 "
+                             "values. See documentation for more information.")
     else:
-            raise ValueError('If you are providing k and/or p values, they have to be chosen from a list of values. See documentation for more information')
-
+        raise ValueError("If you are providing k and/or p values, they have to "
+                         "be chosen from a list of values. See documentation for "
+                         "more information")

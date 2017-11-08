@@ -1,10 +1,14 @@
+"""
+Implements variance() function.
+"""
+
 # I need sane division that returns a float not int
 from __future__ import division
 
 from .mean import mean
 from .decimalize import decimalize
 
-def variance(data, sample = True):
+def variance(data, sample=True):
     """
     Variance_ is the sum of squared deviations from the mean. It is a general measurement of
     how far from the mean the values are.
@@ -36,8 +40,7 @@ def variance(data, sample = True):
 
     data = decimalize(data)
     m = decimalize(mean(data))
-    if sample:
+    if sample: # pylint: disable=no-else-return
         return(float(sum([pow(x - m, 2) for x in data]) / (len(data) - 1)))
     else:
         return(float(mean([pow(x - m, 2) for x in data])))
-

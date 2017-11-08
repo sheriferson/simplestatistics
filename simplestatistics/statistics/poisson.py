@@ -1,7 +1,11 @@
+"""
+Implements poisson() function.
+"""
+
 import math # to use math.e to get Euler's number
 from .factorial import factorial
 
-def poisson(lam, k = list(range(0, 21)), decimals = 4):
+def poisson(lam, k=list(range(0, 21)), decimals=4): # pylint: disable=dangerous-default-value
     """
     The `Poisson distribution`_ is, quoting from the Wikipedia page:
 

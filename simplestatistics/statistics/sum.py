@@ -1,14 +1,18 @@
-from .decimalize import decimalize
+"""
+Implements sum() function.
+"""
 
-def sum(data):
+def sum(data): # pylint: disable=redefined-builtin
     """
     This function returns the sum of numerical values in a data set.
 
-    To reduce floating-point errors, I am using an implementation of the `Kahan summation algorithm`_.
+    To reduce floating-point errors, I am using an implementation of the
+    `Kahan summation algorithm`_.
 
     .. _`Kahan summation algorithm`: https://en.wikipedia.org/wiki/Kahan_summation_algorithm
 
-    The implementation is modeled after that of `simple-statistics <https://github.com/simple-statistics/simple-statistics/blob/master/src/sum.js>`_.
+    The implementation is modeled after that of `simple-statistics \
+    <https://github.com/simple-statistics/simple-statistics/blob/master/src/sum.js>`_.
 
     Args:
         data: A numeric built-in object or list of numeric objects.
@@ -41,7 +45,7 @@ def sum(data):
     if type(data) in [int, float]:
         return(data)
     elif type(data) in [list, tuple]:
-        for ii in range(len(data)):
+        for ii, _ in enumerate(data):
             corrected_current_value = data[ii] - error_compensation
 
             next_sum = current_sum + corrected_current_value
@@ -56,4 +60,3 @@ def sum(data):
         return(round(current_sum, 3))
     else:
         raise TypeError("sum() expects an int, list, or tuple.")
-

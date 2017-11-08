@@ -1,6 +1,9 @@
+"""
+Implements geometric_mean() function.
+"""
+
 # I need sane division that returns a float not int
 from __future__ import division
-import sys
 
 # Are you trying to use python3?
 # if yes, reduce is now in functools
@@ -40,4 +43,3 @@ def geometric_mean(data):
         3.1622776601683795
     """
     return pow(reduce(lambda v, mem: v * mem, data, 1.0), 1 / float(len(data)))
-

@@ -1,3 +1,7 @@
+"""
+Implements median() function.
+"""
+
 # I need sane division that returns a float not int
 from __future__ import division
 
@@ -7,7 +11,7 @@ def median(data):
 
     .. _median: https://en.wikipedia.org/wiki/Median
 
-    If the sample has an odd number of values, the median is the value in the middle. 
+    If the sample has an odd number of values, the median is the value in the middle.
     If the sample has an even number of values, the median is the mean of the two middle values.
 
     Args:
@@ -32,7 +36,7 @@ def median(data):
             ...
         TypeError: median() expects an int or a list.
     """
-    
+
     if type(data) is int:
         return(float(data))
     elif type(data) is list:
@@ -42,9 +46,9 @@ def median(data):
             return(float(data[0]))
         elif len(data) % 2 == 1:
             return(float(data[int(len(data) / 2)]))
-        else:
-            middleIndex = len(data) / 2
-            return((data[int(middleIndex - .5)] + data[int(middleIndex + .5)]) / 2)
+
+        # else
+        middleIndex = len(data) / 2
+        return((data[int(middleIndex - .5)] + data[int(middleIndex + .5)]) / 2)
     else:
         raise TypeError("median() expects an int or a list.")
-

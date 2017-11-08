@@ -1,10 +1,16 @@
+"""
+Implements perceptron().
+"""
+
 class perceptron():
     """
     A `perceptron model`_.
 
     The implementation of the perceptron model is closely modeled after
-    the implementation in `simple-statistics <https://github.com/simple-statistics/simple-statistics>`_, the javascript analogue of ``simplestatistics``. You can
-    find the javascript implementation of the perceptron model `here <https://github.com/simple-statistics/simple-statistics/blob/master/src/perceptron.js>`_.
+    the implementation in `simple-statistics <https://github.com/simple-statistics/\
+            simple-statistics>`_, the javascript analogue of ``simplestatistics``. You can
+    find the javascript implementation of the perceptron model
+    `here <https://github.com/simple-statistics/simple-statistics/blob/master/src/perceptron.js>`_.
 
     .. _`perceptron model`: https://en.wikipedia.org/wiki/Perceptron
 
@@ -42,15 +48,15 @@ class perceptron():
         >>> mod4 = perceptron()
         >>> mod4.train([1, 0], 1)
         >>> mod4.train([1, 1], 1)
-        >>> mod4.train([1, 1, 0], 1)
+        >>> mod4.train([1, 1, 0], 1) # doctest: +ELLIPSIS
         Traceback (most recent call last):
             ...
-        ValueError: The length of features is different than previous features. Reinitialize your model if you want to use new feature lengths.
+        ValueError: The length of features is different ... to use new feature lengths.
     """
 
     def __init__(self):
         # The weights are the coefficiencts of the model
-        # and get updated during training  when the model's 
+        # and get updated during training  when the model's
         # prediction is different from the label/correct category
         self.weights = []
 
@@ -63,7 +69,9 @@ class perceptron():
         done on previous items.
 
         Args:
-            features: A list of the features of the item to classify. The length of the list has to be the same as that of the lists of features the model trained on.
+            features: A list of the features of the item to classify. The length
+            of the list has to be the same as that of the lists of features the
+            model trained on.
 
         Returns:
             0 or 1 denoting the predicted category/classification.
@@ -79,30 +87,33 @@ class perceptron():
         # the score is the sum of the product of each feature
         # with the corresponding weight
         # then add the bias
-        for ii in range(len(features)):
+        for ii, _ in enumerate(features):
             score += features[ii] * self.weights[ii]
 
         score += self.bias
 
-        if score > 0: 
-            return(1) 
-        else: 
-            return(0)
+        if score > 0:
+            return(1)
+
+        # else
+        return(0)
 
     def train(self, features, label):
         """
         The method to train an instance of the perceptron model on an item.
 
         Args:
-            features: A list of numerical features in the form [feature_1, feature_2, ...]. The length of the list needs to be the same for each item given to the same model/instance.
-            label: An integer of value 0 or 1 to denote category of the item.
+            features: A list of numerical features in the form [feature_1,
+            feature_2, ...]. The length of the list needs to be the same for each
+            item given to the same model/instance.  label: An integer of value 0
+            or 1 to denote category of the item.
 
         Returns:
             null
         """
 
         # we will require labels to either be 0 or 1
-        if label not in [0,1]:
+        if label not in [0, 1]:
             raise ValueError('Labels need to be either 0 or 1.')
 
         # if this is the first set of features the model trains on
@@ -110,13 +121,15 @@ class perceptron():
         if len(self.weights) == 0:
             self.weights = features
             self.bias = 1
-            
+
         elif len(self.weights) != len(features):
-            raise ValueError('The length of features is different than previous features. Reinitialize your model if you want to use new feature lengths.')
+            raise ValueError('The length of features is different than previous '
+                             'features. Reinitialize your model if you want to use '
+                             'new feature lengths.')
 
         # Make a prediction with current weights
         prediction = self.predict(features)
-        
+
         if prediction != label:
             gradient = label - prediction
 

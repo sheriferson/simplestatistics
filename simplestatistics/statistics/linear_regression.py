@@ -1,12 +1,14 @@
+"""
+Implements linear_regression() function.
+"""
+
 # I need sane division that returns a float not int
 # from __future__ import division
 
-from decimal import *
+import decimal
 
-from .decimalize import decimalize
 from .mean import mean
 from .product import product
-from .sum import sum
 
 def linear_regression(x, y, decimals=2):
     """
@@ -64,12 +66,12 @@ def linear_regression(x, y, decimals=2):
     mean_x2 = mean(x2)
 
     # calculate slope
-    numerator = ( mean_x * mean_y ) - mean_xy
+    numerator = (mean_x * mean_y) - mean_xy
     denomerator = pow(mean_x, 2) - mean_x2
 
-    m = Decimal(numerator) / Decimal(denomerator) # slope
+    m = decimal.Decimal(numerator) / decimal.Decimal(denomerator) # slope
 
     # calculate y intercept
-    b = Decimal(mean_y) - (m * Decimal(mean_x))
+    b = decimal.Decimal(mean_y) - (m * decimal.Decimal(mean_x))
 
     return(round(m, decimals), round(b, decimals))

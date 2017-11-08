@@ -1,9 +1,13 @@
+"""
+Implements correlate() function.
+"""
+
 # I need sane division that returns a float not int
 from __future__ import division
 
 from .z_scores import z_scores
 from .product import product
-from .sum import sum
+from .sum import sum # pylint: disable=redefined-builtin
 
 def correlate(x, y):
     """
@@ -19,9 +23,10 @@ def correlate(x, y):
     .. _Covariance: https://en.wikipedia.org/wiki/Covariance
 
     This `Cross Validated answer`_ provides a good explanation of the difference between
-    covariance and correlation. Covariance is understood in the context of the units and scales involved.
-    You cannot compare covariances across those contexts. A correlation is a "normalized" covariance
-    that will always be a value between -1 and 1 and takes into account the scale of the variables.
+    covariance and correlation. Covariance is understood in the context of the units
+    and scales involved. You cannot compare covariances across those contexts. A
+    correlation is a "normalized" covariance that will always be a value between -1
+    and 1 and takes into account the scale of the variables.
 
     .. _`Cross Validated answer`: http://stats.stackexchange.com/a/18089
 
@@ -49,24 +54,26 @@ def correlate(x, y):
         >>> correlate([2, 1, 0, -1, -2, -3, -4, -5], [0, 1, 1, 2, 3, 2, 4, 5])
         -0.9434285714285714
 
-        >>> correlate(2, 3)
+        >>> correlate(2, 3) # doctest: +ELLIPSIS
         Traceback (most recent call last):
             ...
-        ValueError: To calculate correlation you need lists or tuples of equal length. Length must be > 1.
-        >>> correlate([2, 4], [6, 6.5, 7])
+        ValueError: To calculate correlation you need lists or tuples of equal length...
+        >>> correlate([2, 4], [6, 6.5, 7]) # doctest: +ELLIPSIS
         Traceback (most recent call last):
             ...
-        ValueError: To calculate correlation you need lists or tuples of equal length. Length must be > 1.
+        ValueError: To calculate correlation you need lists or tuples of equal length...
         >>> correlate([1], [-1])
         Traceback (most recent call last):
             ...
         ValueError: Correlation requires lists of equal length where length is > 1.
     """
     if type(x) not in [list, tuple] or type(y) not in [list, tuple]:
-        raise ValueError("To calculate correlation you need lists or tuples of equal length. Length must be > 1.")
+        raise ValueError("To calculate correlation you need lists or tuples of "
+                         "equal length. Length must be > 1.")
 
     if len(x) != len(y):
-        raise ValueError("To calculate correlation you need lists or tuples of equal length. Length must be > 1.")
+        raise ValueError("To calculate correlation you need lists or tuples of "
+                         "equal length. Length must be > 1.")
 
     if len(x) <= 1 or len(y) <= 1:
         raise ValueError("Correlation requires lists of equal length where length is > 1.")

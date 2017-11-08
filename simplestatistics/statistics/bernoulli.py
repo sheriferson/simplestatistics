@@ -1,6 +1,10 @@
+"""
+Implements binomial() function.
+"""
+
 from .binomial import binomial
 
-def bernoulli(p, decimals = 2):
+def bernoulli(p, decimals=2):
     """
     The `Bernoulli distribution`_ is, quoting from the Wikipedia page:
 
@@ -39,4 +43,3 @@ def bernoulli(p, decimals = 2):
     probabilities = [round(x, decimals) for x in probabilities]
 
     return(probabilities)
-

@@ -1,4 +1,8 @@
-def min(data):
+"""
+Implements min() function.
+"""
+
+def min(data): # pylint: disable=redefined-builtin
     """
     This function returns the smallest numerical value in a data set.
 
@@ -30,4 +34,3 @@ def min(data):
         min_value = data
 
     return(min_value)
-

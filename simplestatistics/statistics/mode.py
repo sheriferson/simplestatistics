@@ -1,3 +1,7 @@
+"""
+Implements mode() function.
+"""
+
 def mode(data):
     """
     The mode_ is "the value that appears most often in a set of data."
@@ -53,4 +57,3 @@ def mode(data):
 
         modes.sort()
         return(modes)
-

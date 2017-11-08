@@ -1,3 +1,7 @@
+"""
+Implements tanh() function.
+"""
+
 from .sinh import sinh
 from .cosh import cosh
 
@@ -33,9 +37,13 @@ def tanh(x, decimals=5):
         0.99505
         >>> tanh(0.2)
         0.19738
+        >>> tanh('c')
+        Traceback (most recent call last):
+            ...
+        TypeError: tanh expects an integer or float.
     """
 
-    if not isinstance(x, (int, float)):
+    if type(x) not in [int, float]:
         raise TypeError('tanh expects an integer or float.')
 
     return(round(sinh(x) / cosh(x), ndigits=decimals))

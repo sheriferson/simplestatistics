@@ -1,6 +1,10 @@
-from .sum import sum
+"""
+Implements add_to_mean() function.
+"""
 
-def add_to_mean(current_mean, n, new_value, decimals = 2):
+from .sum import sum # pylint: disable=redefined-builtin
+
+def add_to_mean(current_mean, n, new_value, decimals=2):
     """
     This function can be used when wanting to know the new mean of a list
     after adding one or more values to it.
@@ -29,10 +33,10 @@ def add_to_mean(current_mean, n, new_value, decimals = 2):
         Traceback (most recent call last):
             ...
         ValueError: Current n must be an integer greater than 0.
-        >>> add_to_mean(16, 8, ('5'))
+        >>> add_to_mean(16, 8, ('5')) # doctest: +ELLIPSIS
         Traceback (most recent call last):
             ...
-        TypeError: add_to_mean() requires the new value(s) to be an int, float, or a list or tuple of ints and/or floats.
+        TypeError: add_to_mean() requires the new value(s) ... ints and/or floats.
     """
 
     old_sum = current_mean * n
@@ -46,12 +50,12 @@ def add_to_mean(current_mean, n, new_value, decimals = 2):
 
         return(round(new_sum / (n + 1), decimals))
 
-    elif isinstance(new_value, list) or isinstance(new_value, tuple):
+
+    elif type(new_value) in [list, tuple]:
         new_sum = old_sum + sum(new_value)
 
         return(round(new_sum / (n + len(new_value)), decimals))
 
     else:
-        raise TypeError('add_to_mean() requires the new value(s) to be an int, float, or a list or tuple of ints and/or floats.')
-
-
+        raise TypeError('add_to_mean() requires the new value(s) to be an int, '
+                        'float, or a list or tuple of ints and/or floats.')

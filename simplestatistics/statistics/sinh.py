@@ -1,3 +1,7 @@
+"""
+Implements sinh() function.
+"""
+
 from math import e # 2.718...
 
 def sinh(x, decimals=5):

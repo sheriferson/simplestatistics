@@ -1,3 +1,7 @@
+"""
+Implements product() function.
+"""
+
 def product(x, y):
     """
     This function calculates the product of two vectors or lists of numerical objects, like so:
@@ -8,7 +12,8 @@ def product(x, y):
 
     Args:
         x: An int or a float, or a list or tuple of numerical objects.
-        y: An int or a float, or a list or tuple of numerical objects. If a list or tuple, must have the same length as x.
+        y: An int or a float, or a list or tuple of numerical objects. If a\
+                list or tuple, must have the same length as x.
 
     Returns:
         A list of numerical objects of the same length as x and y.
@@ -51,24 +56,24 @@ def product(x, y):
 
     # I'm not very happy with this if-else heavy implementation
     # but can't think of how to do this in a smarter more dynamic way
-    
+
     # if both are ints, return their product
     if type(x) in [int, float] and type(y) in [int, float]:
         return(x * y)
 
     # if x is int, y must be a float, list, or tuple
     elif type(x) in [int, float]:
-        for ii in range(len(y)):
+        for ii, _ in enumerate(y):
             product_vector.append(x * y[ii])
 
     # if y is int, x must be a float, list, or tuple
     elif type(y) in [int, float]:
-        for ii in range(len(x)):
+        for ii, _ in enumerate(x):
             product_vector.append(x[ii] * y)
 
     # else, both are lists or tuples
     else:
-        for ii in range(len(x)):
+        for ii, _ in enumerate(x):
             product_vector.append(x[ii] * y[ii])
 
     return(product_vector)

@@ -1,3 +1,7 @@
+"""
+Implements cosh() function.
+"""
+
 from math import e # 2.718...
 
 def cosh(x, decimals=5):
@@ -35,8 +39,13 @@ def cosh(x, decimals=5):
         3.7622
         >>> cosh(2.5)
         6.13229
+        >>> cosh('c')
+        Traceback (most recent call last):
+            ...
+        TypeError: cosh expects an integer or float.
+
     """
-    if not isinstance(x, (int, float)):
+    if type(x) not in [int, float]:
         raise TypeError('cosh expects an integer or float.')
 
     result = (1 + pow(e, -2 * x)) / (2 * pow(e, -x))

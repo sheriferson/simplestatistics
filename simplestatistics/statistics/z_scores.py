@@ -1,8 +1,13 @@
+"""
+Implements z_scores() function to standardize a variable to have mean
+of 0 and standard deviation of 1.
+"""
+
 from .mean import mean
 from .decimalize import decimalize
 from .standard_deviation import standard_deviation
 
-def z_scores(data, sample = True):
+def z_scores(data, sample=True):
     """
     Standardizing a variable or set of data is transforming the data such that it
     has a mean of 0 and standard deviation of 1.
@@ -49,6 +54,5 @@ def z_scores(data, sample = True):
         mean_of_data = decimalize(mean(data))
         sd_of_data = decimalize(standard_deviation(data, sample))
 
-        z_scores = [float((mean_of_data - ii) / sd_of_data) for ii in data]
-        return(z_scores)
-
+        scores = [float((mean_of_data - ii) / sd_of_data) for ii in data]
+        return(scores)

@@ -1,3 +1,7 @@
+"""
+Implements mean() function.
+"""
+
 # I need sane division that returns a float not int
 from __future__ import division
 
@@ -11,7 +15,7 @@ def mean(data):
 
     Equation:
         .. math::
-            \\bar{X} = \\frac{\sum X}{n}
+            \\bar{X} = \\frac{\\sum X}{n}
 
     Args:
         data: A numeric built-in object, a tuple,
@@ -33,4 +37,3 @@ def mean(data):
     """
     data = decimalize(data)
     return float(sum(data) / len(data))
-

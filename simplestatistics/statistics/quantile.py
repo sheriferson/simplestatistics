@@ -1,14 +1,23 @@
+"""
+Implements quantile() function, and the helper get_q_value() function (not exposed).
+"""
+
 def get_q_value(data, p):
+    """
+    Helper function to be used for quantile().
+    Given data and a p value, returns the value from data below which you would
+    find (p*100)% of the values.
+    """
     q = len(data) * p
 
-    for index in range(len(data)):
+    for index, _ in enumerate(data):
         if (index + 1) >= q:
             return(data[index])
 
-def quantile(data, p = [0, .25, .5, .75, 1]):
+def quantile(data, p=[0, .25, .5, .75, 1]): # pylint: disable=dangerous-default-value
     """
-    Quantiles_ are "are cutpoints dividing the range of a probability distribution 
-    into contiguous intervals with equal probabilities, or dividing the observations 
+    Quantiles_ are "are cutpoints dividing the range of a probability distribution
+    into contiguous intervals with equal probabilities, or dividing the observations
     in a sample in the same way".
     This function assumes the data provided is a statistical population, not sample.
 
@@ -56,10 +65,8 @@ def quantile(data, p = [0, .25, .5, .75, 1]):
     # this function needs a list
     if type(data) is not list:
         raise TypeError("quantile expects a list of numerical objects.")
-    
-    data.sort()
 
-    n = len(data)
+    data.sort()
 
     if type(p) in [int, float]:
         return(get_q_value(data, p))

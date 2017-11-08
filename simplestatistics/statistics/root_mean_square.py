@@ -1,5 +1,9 @@
+"""
+Implement root_mean_square() function.
+"""
+
 import math
-from .sum import sum
+from .sum import sum # pylint: disable=redefined-builtin
 
 def root_mean_square(x):
     """
@@ -35,5 +39,3 @@ def root_mean_square(x):
     rms = math.sqrt(ms)
 
     return(rms)
-
-

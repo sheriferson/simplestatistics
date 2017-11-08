@@ -1,4 +1,8 @@
-def max(data):
+"""
+Implements max() function.
+"""
+
+def max(data): # pylint: disable=redefined-builtin
     """
     This function returns the maximum numerical value in a data set.
 
@@ -28,4 +32,3 @@ def max(data):
         max_value = data
 
     return(max_value)
-

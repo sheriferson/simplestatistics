@@ -1,4 +1,12 @@
+"""
+Implements factorial() function, and helper function obtain_factorial().
+"""
+
 def obtain_factorial(x):
+    """
+    Helper function obtain_factorial() for the factorial() function.
+    Given value x, it returns the factorial of that value.
+    """
     product = 1
     for ii in list(range(x)):
         product = product * (ii + 1)
@@ -63,4 +71,3 @@ def factorial(x):
             raise ValueError('Perhaps you provided a list that contains non-integers.')
     else:
         raise TypeError('factorial() expects a positive integer or list of positive integers.')
-

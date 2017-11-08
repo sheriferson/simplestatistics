@@ -1,5 +1,10 @@
+"""
+Implements sum_nth_power_deviations(x, n), which gives the sum of each value
+in x (from the mean) to the Nth power.
+"""
+
 from .mean import mean
-from .sum import sum
+from .sum import sum # pylint: disable=redefined-builtin
 
 def sum_nth_power_deviations(x, n):
     """

@@ -1,3 +1,7 @@
+"""
+Implements interquartile_range() function.
+"""
+
 from .quantile import quantile
 
 def interquartile_range(x):

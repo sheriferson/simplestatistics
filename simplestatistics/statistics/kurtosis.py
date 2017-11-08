@@ -1,14 +1,18 @@
+"""
+Implements kurtosis() function.
+"""
+
 # I need sane division that returns a float not int
 from __future__ import division
 
 from .decimalize import decimalize
 from .mean import mean
-from .sum import sum
+from .sum import sum # pylint: disable=redefined-builtin
 
 def kurtosis(x):
     """
-    `Kurtosis`_ is a descriptor of the shape of a probability distribution. It is a measure of the "tailedness"
-    of the probability distribution of a variable.
+    `Kurtosis`_ is a descriptor of the shape of a probability distribution.
+    It is a measure of the "tailedness" of the probability distribution of a variable.
 
     .. _`Kurtosis`: https://en.wikipedia.org/wiki/Kurtosis
 
@@ -19,11 +23,13 @@ def kurtosis(x):
     This function is an implementation of the formula found in Sheskin (2000), which is the one
     used by SPSS and SAS by default.
 
-    Sheskin, D.J. (2000) *Handbook of Parametric and Nonparametric Statistical Procedures, Second Edition*. Boca Raton, Florida: Chapman & Hall/CRC.
+    Sheskin, D.J. (2000) *Handbook of Parametric and Nonparametric Statistical
+    Procedures, Second Edition*. Boca Raton, Florida: Chapman & Hall/CRC.
 
     Equation:
         .. math::
-            \\frac{n(n+1)}{(n-1)(n-2)(n-3)}\\bigg{(}\\frac{s4}{V(x)^2}\\bigg{)} - 3 \\frac{(n-1)^2}{(n-2)(n-3)}
+            \\frac{n(n+1)}{(n-1)(n-2)(n-3)}\\bigg{(}\\frac{s4}{V(x)^2}\\bigg{)}
+            - 3 \\frac{(n-1)^2}{(n-2)(n-3)}
 
         Where
 

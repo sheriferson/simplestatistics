@@ -1,16 +1,20 @@
-from .standard_deviation import standard_deviation
+"""
+Implements error_function().
+"""
+
 import math
 
-def error_function(x, decimals = 2):
+def error_function(x, decimals=2):
     """
     The error function, or `Gauss error function`_.
 
     .. _`Gauss error function`: https://en.wikipedia.org/wiki/Error_function
 
-    The function returns the probability that a value in a normal distribution is between :math:`\\frac{x}{sd\\sqrt{2}}`
-    and :math:`\\frac{-x}{sd\\sqrt{2}}`.
+    The function returns the probability that a value in a normal distribution
+    is between :math:`\\frac{x}{sd\\sqrt{2}}` and :math:`\\frac{-x}{sd\\sqrt{2}}`.
 
-    This implementation is closely modeled after the impementation in `simple-statistics <https://github.com/simple-statistics/simple-statistics>`_,
+    This implementation is closely modeled after the impementation in
+    `simple-statistics <https://github.com/simple-statistics/simple-statistics>`_,
     and returns a numerical approximation of the exact value.
 
     Args:
@@ -39,7 +43,7 @@ def error_function(x, decimals = 2):
         raise ValueError('error_function() only accepts values of type int or float.')
     t = 1 / (1 + (0.5 * abs(x)))
 
-    tau = t * math.exp( (math.pow(x, 2) * - 1) - \
+    tau = t * math.exp((math.pow(x, 2) * - 1) - \
         1.26551223 + \
         1.00002368 * t + \
         0.37409196 * math.pow(t, 2) + \
@@ -53,6 +57,6 @@ def error_function(x, decimals = 2):
 
     if x >= 0:
         return(round(1 - tau, decimals))
-    else:
-        return(round(tau - 1, decimals))
 
+    # else
+    return(round(tau - 1, decimals))

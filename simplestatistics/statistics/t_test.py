@@ -1,3 +1,7 @@
+"""
+Implements t_test() function.
+"""
+
 # I need sane division that returns a float not int
 from __future__ import division
 

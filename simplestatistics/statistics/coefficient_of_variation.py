@@ -1,7 +1,11 @@
+"""
+Implements coefficient_of_variation() function.
+"""
+
 from .standard_deviation import standard_deviation
 from .mean import mean
 
-def coefficient_of_variation(data, sample = True):
+def coefficient_of_variation(data, sample=True):
     """
     The `coefficient of variation`_ is the ratio of the standard deviation to the mean.
 
@@ -24,4 +28,5 @@ def coefficient_of_variation(data, sample = True):
         >>> coefficient_of_variation([-1, 0, 1, 2, 3, 4])
         1.247219128924647
     """
+
     return standard_deviation(data, sample) / mean(data)

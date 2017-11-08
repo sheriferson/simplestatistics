@@ -65,6 +65,24 @@ Otherwise, to just run the tests:
 nosetests --with-doctest
 ```
 
+The code adheres to [PEP8] guidelines except for the following checkers:
+
+- `invalid-name`
+- `len-as-condition`
+- `superfluous-parens`
+- `unidiomatic-typecheck`
+
+[PEP8]: https://www.python.org/dev/peps/pep-0008/ "PEP 8 -- Style Guide for Python Code"
+
+To [lint] the code, make sure you have [`pylint`] installed (`pip install pylint`), `cd` into the `simplestatistics/statistics` directory, then run:
+
+```bash
+pylint -d 'invalid-name, len-as-condition, superfluous-parens, unidiomatic-typecheck' *.py
+```
+
+[lint]: https://en.wikipedia.org/wiki/Lint_%28software%29 "Linting Wikipedia page"
+[pylint]: https://pylint.org "Pylint website"
+
 ## Functions and examples
 
 ### Descriptive statistics

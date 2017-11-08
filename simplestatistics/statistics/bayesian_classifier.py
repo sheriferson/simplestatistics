@@ -1,3 +1,7 @@
+"""
+Implements bayesian_classifier().
+"""
+
 # I need sane division that returns a float not int
 from __future__ import division
 
@@ -8,7 +12,8 @@ class bayesian_classifier():
     The implemention of this classifier is very closely modeled after the implementation
     in `simple-statistics <https://github.com/simple-statistics/simple-statistics>`_,
     the javascript analogue of ``simplestatistics``. You can find the javascript implementation
-    of the Bayesian classifier `here <https://github.com/simple-statistics/simple-statistics/blob/master/src/bayesian_classifier.js>`_.
+    of the Bayesian classifier `here <https://github.com/simple-statistics/\
+    simple-statistics/blob/master/src/bayesian_classifier.js>`_.
 
     .. _`naive Bayesian classifier`: https://en.wikipedia.org/wiki/Naive_Bayes_classifier
 
@@ -49,10 +54,10 @@ class bayesian_classifier():
         [('chair', 0.2), ('animal', 0)]
 
         >>> mod = bayesian_classifier()
-        >>> mod.score({'color': 'purple'})
+        >>> mod.score({'color': 'purple'}) # doctest: +ELLIPSIS
         Traceback (most recent call last):
             ...
-        RuntimeError: The model has not been trained yet. Train the model before trying to score an item.
+        RuntimeError: The model has not been trained yet. Train the model ... item.
     """
 
     def __init__(self):
@@ -67,8 +72,9 @@ class bayesian_classifier():
         on an item.
 
         Args:
-            item: A dict of property-value pairs in the form {property_1: value1, property2: value2, . . .} for the item.
-            category: A string of the category of the item.
+            item: A dict of property-value pairs in the form {property_1: value1,
+            property2: value2, . . .} for the item.  category: A string of the
+            category of the item.
 
         Returns:
             null
@@ -109,11 +115,13 @@ class bayesian_classifier():
             item: A dict in the form {property: value} of the item you want to score.
 
         Returns:
-            A list containing tuples of properties and scores. The list is ordered in descending order of scores.
+            A list containing tuples of properties and scores. The list is ordered
+            in descending order of scores.
         """
 
         if self.store == {}:
-            raise RuntimeError('The model has not been trained yet. Train the model before trying to score an item.')
+            raise RuntimeError('The model has not been trained yet. Train the '
+                               'model before trying to score an item.')
 
         # iterate through each key in the item to be scored
         # and then iterate through each category used in previous
@@ -138,7 +146,8 @@ class bayesian_classifier():
                     # return the number of times divided by total training trials
                     # we get a score for each unique property+value combination within a category
                     if item_value in self.store[category][item_key]:
-                        odds[category][item_key + '_' + item_value] = self.store[category][item_key][item_value] / self.count
+                        odds[category][item_key + '_' + item_value] = \
+                                self.store[category][item_key][item_value] / self.count
 
                     # otherwise, mark it zero.
                     else:
@@ -157,4 +166,4 @@ class bayesian_classifier():
                 odds_sums[category] += odds[category][combination]
 
         # return a list of properties and scores in descending order of scores
-        return(sorted(odds_sums.items(), key = lambda x: x[1], reverse = True))
+        return(sorted(odds_sums.items(), key=lambda x: x[1], reverse=True))

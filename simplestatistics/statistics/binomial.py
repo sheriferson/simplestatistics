@@ -1,7 +1,15 @@
+"""
+Implements binomial() function with binom_single_calculation() helper function.
+"""
+
 from .choose import choose
 from .decimalize import decimalize
 
 def binom_single_calculation(k, n, p):
+    """
+    Helper function to be used by binomial() function.
+    """
+
     # break the binomial distribution into three components
     # 1. n choose k
     component_1 = choose(n, k)
@@ -20,11 +28,10 @@ def binomial(k, n, p):
     The `Binomial Distribution`_ is, quoting from the Wikipedia
     page:
 
-        In probability theory and statistics, the binomial distribution 
-        with parameters n and p is the discrete probability distribution 
-        of the number of successes in a sequence of n independent 
-        yes/no experiments, each of which yields success with 
-        probability p.
+        In probability theory and statistics, the binomial distribution
+        with parameters n and p is the discrete probability distribution
+        of the number of successes in a sequence of n independent
+        yes/no experiments, each of which yields success with probability p.
 
     .. _`binomial distribution`: https://en.wikipedia.org/wiki/Binomial_distribution
 
@@ -39,8 +46,8 @@ def binomial(k, n, p):
         p: Float representing probability of success per trial.
 
     Returns:
-        Float (or list of floats, if provided k was a list) 
-        representing probabilities of obtaining each k according to 
+        Float (or list of floats, if provided k was a list)
+        representing probabilities of obtaining each k according to
         the binomial distribution.
 
     Examples:

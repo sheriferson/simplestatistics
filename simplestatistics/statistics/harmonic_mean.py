@@ -1,5 +1,8 @@
+"""
+Implements harmonic_mean() function.
+"""
+
 from .mean import mean
-from .sum import sum
 
 def harmonic_mean(x):
     """
@@ -13,7 +16,7 @@ def harmonic_mean(x):
 
     Equation:
         .. math::
-            H = \\frac{n}{\\frac{1}{x_1}+\\frac{1}{x_2}+\\ldots+\\frac{1}{x_n}} = 
+            H = \\frac{n}{\\frac{1}{x_1}+\\frac{1}{x_2}+\\ldots+\\frac{1}{x_n}} =
             \\frac{n}{\\sum\\limits_{i=1}^n \\frac{1}{x_i}}
 
     Args:
@@ -33,7 +36,7 @@ def harmonic_mean(x):
             ...
         TypeError: harmonic_mean() expects a list or a tuple.
     """
-    
+
     if type(x) not in [list, tuple]:
         raise TypeError('harmonic_mean() expects a list or a tuple.')
 
@@ -41,4 +44,3 @@ def harmonic_mean(x):
     # sum_of_reciprocals = sum(reciprocals[:])
 
     return(1 / mean(reciprocals))
-

@@ -1,3 +1,7 @@
+"""
+Implements factorial() function.
+"""
+
 from .factorial import factorial
 
 def choose(n, k):
@@ -43,4 +47,3 @@ def choose(n, k):
     denomerator = factorial(k) * factorial(n - k)
 
     return(int(numerator / denomerator))
-

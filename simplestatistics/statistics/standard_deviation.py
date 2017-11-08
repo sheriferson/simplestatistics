@@ -1,7 +1,11 @@
+"""
+Implements standard_deviation().
+"""
+
 import math
 from .variance import variance
 
-def standard_deviation(data, sample = True):
+def standard_deviation(data, sample=True):
     """
     The `standard deviation`_ is the square root of variance_ (the sum of squared deviations
     from the mean).
