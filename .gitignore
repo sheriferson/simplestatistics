@@ -4,3 +4,4 @@ htmlcov/
 *.pyc
 .coverage
 *.taskpaper
+*.ipynb*

@@ -11,6 +11,7 @@ TBD
 - `sinh()` - hyperbolic function (sinh)
 - `cosh()` - hyperbolic function (cosh)
 - `tanh()` - hyperbolic function (tanh)
+- `gamma_function()`
 
 ## 0.3.0
 

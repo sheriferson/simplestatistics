@@ -44,6 +44,7 @@ from .statistics.bernoulli import bernoulli
 from .statistics.poisson import poisson
 from .statistics.t_test import t_test
 from .statistics.chi_squared_dist_table import chi_squared_dist_table
+from .statistics.gamma_function import gamma_function
 
 # classifiers
 from .statistics.bayesian_classifier import bayesian_classifier

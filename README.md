@@ -175,6 +175,7 @@ pylint -d 'invalid-name, len-as-condition, superfluous-parens, unidiomatic-typec
 | [Poisson distribution][]           | `poisson(3, [0, 1, 2, 3])`                             |
 | [One-sample t-test][]              | `t_test([1, 2, 3, 4, 5, 6], 3.385)`                    |
 | [Chi Squared Distribution Table][] | `chi_squared_dist_table(k = 10, p = .01)`              |
+| [Gamma function][]                 | `gamma_function([1, 2, 3, 4, 5])`                      |
 
 [Factorial]: http://simplestatistics.readthedocs.io/en/latest/#factorial
 [Choose]: http://simplestatistics.readthedocs.io/en/latest/#choose
@@ -184,6 +185,7 @@ pylint -d 'invalid-name, len-as-condition, superfluous-parens, unidiomatic-typec
 [Poisson distribution]: http://simplestatistics.readthedocs.io/en/latest/#poisson-distribution
 [One-sample t-test]: http://simplestatistics.readthedocs.io/en/latest/#one-sample-t-test
 [Chi Squared Distribution Table]: http://simplestatistics.readthedocs.io/en/latest/#chi-squared-distribution-table
+[Gamma function]: http://simplestatistics.readthedocs.io/en/latest/#gamma-function
 
 ### Classifiers
 
