@@ -173,9 +173,10 @@ pylint -d 'invalid-name, len-as-condition, superfluous-parens, unidiomatic-typec
 | [Binomial distribution][]          | `binomial(4, 12, 0.2)` or `binomial([3,4,5], 12, 0.5)` |
 | [Bernoulli distribution][]         | `bernoulli(0.25)`                                      |
 | [Poisson distribution][]           | `poisson(3, [0, 1, 2, 3])`                             |
+| [Gamma function][]                 | `gamma_function([1, 2, 3, 4, 5])`                      |
+| [Beta distribution][]              | `beta([.1, .2, .3], 5, 2)`                             |
 | [One-sample t-test][]              | `t_test([1, 2, 3, 4, 5, 6], 3.385)`                    |
 | [Chi Squared Distribution Table][] | `chi_squared_dist_table(k = 10, p = .01)`              |
-| [Gamma function][]                 | `gamma_function([1, 2, 3, 4, 5])`                      |
 
 [Factorial]: http://simplestatistics.readthedocs.io/en/latest/#factorial
 [Choose]: http://simplestatistics.readthedocs.io/en/latest/#choose
@@ -183,9 +184,10 @@ pylint -d 'invalid-name, len-as-condition, superfluous-parens, unidiomatic-typec
 [Binomial distribution]: http://simplestatistics.readthedocs.io/en/latest/#binomial-distribution
 [Bernoulli distribution]: http://simplestatistics.readthedocs.io/en/latest/#bernoulli-distribution
 [Poisson distribution]: http://simplestatistics.readthedocs.io/en/latest/#poisson-distribution
+[Gamma function]: http://simplestatistics.readthedocs.io/en/latest/#gamma-function
+[Beta distribution]: http://simplestatistics.readthedocs.io/en/latest/#beta-distribution
 [One-sample t-test]: http://simplestatistics.readthedocs.io/en/latest/#one-sample-t-test
 [Chi Squared Distribution Table]: http://simplestatistics.readthedocs.io/en/latest/#chi-squared-distribution-table
-[Gamma function]: http://simplestatistics.readthedocs.io/en/latest/#gamma-function
 
 ### Classifiers
 

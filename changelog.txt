@@ -12,6 +12,7 @@ TBD
 - `cosh()` - hyperbolic function (cosh)
 - `tanh()` - hyperbolic function (tanh)
 - `gamma_function()`
+- `beta()`
 
 ## 0.3.0
 

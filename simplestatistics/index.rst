@@ -232,6 +232,16 @@ Poisson distribution
 
 .. autofunction:: simplestatistics.poisson
 
+Gamma function
+^^^^^^^^^^^^^^
+
+.. autofunction:: simplestatistics.gamma_function
+
+Beta distribution
+^^^^^^^^^^^^^^^^^
+
+.. autofunction:: simplestatistics.beta
+
 One-sample t test
 ^^^^^^^^^^^^^^^^^
 
@@ -241,11 +251,6 @@ Chi Squared Distribution Table
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. autofunction:: simplestatistics.chi_squared_dist_table
-
-Gamma function
-^^^^^^^^^^^^^^
-
-.. autofunction:: simplestatistics.gamma_function
 
 Utilities
 ---------

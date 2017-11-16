@@ -236,6 +236,14 @@ Distributions
 | distribution <http://simplestatistics.readthedo |                                                 |
 | cs.io/en/latest/#poisson-distribution>`__       |                                                 |
 +-------------------------------------------------+-------------------------------------------------+
+| `Gamma                                          | ``gamma_function([1, 2, 3, 4, 5])``             |
+| function <http://simplestatistics.readthedocs.i |                                                 |
+| o/en/latest/#gamma-function>`__                 |                                                 |
++-------------------------------------------------+-------------------------------------------------+
+| `Beta                                           | ``beta([.1, .2, .3], 5, 2)``                    |
+| distribution <http://simplestatistics.readthedo |                                                 |
+| cs.io/en/latest/#beta-distribution>`__          |                                                 |
++-------------------------------------------------+-------------------------------------------------+
 | `One-sample                                     | ``t_test([1, 2, 3, 4, 5, 6], 3.385)``           |
 | t-test <http://simplestatistics.readthedocs.io/ |                                                 |
 | en/latest/#one-sample-t-test>`__                |                                                 |
@@ -243,10 +251,6 @@ Distributions
 | `Chi Squared Distribution                       | ``chi_squared_dist_table(k = 10, p = .01)``     |
 | Table <http://simplestatistics.readthedocs.io/e |                                                 |
 | n/latest/#chi-squared-distribution-table>`__    |                                                 |
-+-------------------------------------------------+-------------------------------------------------+
-| `Gamma                                          | ``gamma_function([1, 2, 3, 4, 5])``             |
-| function <http://simplestatistics.readthedocs.i |                                                 |
-| o/en/latest/#gamma-function>`__                 |                                                 |
 +-------------------------------------------------+-------------------------------------------------+
 
 Classifiers
