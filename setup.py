@@ -6,13 +6,13 @@ from distutils.core import setup
 setup(
     name='simplestatistics',
     packages=['simplestatistics', 'simplestatistics.statistics'],
-    version='0.3.0',
+    version='0.4.0',
     description='Simple statistical functions implemented in readable Python.',
     author='Sherif Soliman',
     author_email='sherif@ssoliman.com',
     license='MIT',
     url='https://github.com/sheriferson/simplestatistics',
-    download_url='https://github.com/sheriferson/simplestatistics/tarball/0.3.0',
+    download_url='https://github.com/sheriferson/simplestatistics/tarball/0.4.0',
     keywords=['statistics', 'math'],
     classifiers=[
         'Programming Language :: Python :: 2',
