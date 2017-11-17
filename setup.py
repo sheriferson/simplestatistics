@@ -1,3 +1,6 @@
+"""
+setup.py for simplestatistics package
+"""
 from distutils.core import setup
 
 setup(
@@ -7,7 +10,7 @@ setup(
     description='Simple statistical functions implemented in readable Python.',
     author='Sherif Soliman',
     author_email='sherif@ssoliman.com',
-    copyright='Copyright (c) 2016 Sherif Soliman',
+    license='MIT',
     url='https://github.com/sheriferson/simplestatistics',
     download_url='https://github.com/sheriferson/simplestatistics/tarball/0.3.0',
     keywords=['statistics', 'math'],
