@@ -1,4 +1,5 @@
 _build/
+.mypy_cache/
 dist/
 htmlcov/
 *.pyc
