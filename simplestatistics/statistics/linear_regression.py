@@ -5,8 +5,6 @@ Implements linear_regression() function.
 # I need sane division that returns a float not int
 # from __future__ import division
 
-import decimal
-
 from .mean import mean
 from .product import product
 
@@ -69,9 +67,9 @@ def linear_regression(x, y, decimals=2):
     numerator = (mean_x * mean_y) - mean_xy
     denomerator = pow(mean_x, 2) - mean_x2
 
-    m = decimal.Decimal(numerator) / decimal.Decimal(denomerator) # slope
+    m = numerator / denomerator # slope
 
     # calculate y intercept
-    b = decimal.Decimal(mean_y) - (m * decimal.Decimal(mean_x))
+    b = mean_y - (m * mean_x)
 
     return(round(m, decimals), round(b, decimals))
