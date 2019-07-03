@@ -2,10 +2,6 @@
 Implements skew() function to calculate skewness of a variable
 """
 
-# I need sane division that returns a float not int
-from __future__ import division
-
-from .decimalize import decimalize
 from .mean import mean
 from .sum import sum # pylint: disable=redefined-builtin
 
@@ -58,7 +54,7 @@ def skew(x):
     if type(x) in [int, float]:
         return(None)
 
-    mean_x = decimalize(mean(x))
+    mean_x = mean(x)
     n = len(x)
 
     m2 = sum([pow((value - mean_x), 2) for value in x]) * (1/n)
