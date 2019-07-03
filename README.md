@@ -8,7 +8,12 @@
 [simple-statistics](https://github.com/tmcw/simple-statistics)
 for Python.
 
-`simplestatistics` is compatible with Python 2 & 3.
+`simplestatistics` is compatible with Python 3.
+
+[Version 0.4.0][0.4] was the last version to not use Python 3 specific features. Going forward, `simplestatistics` will adopt Python 3 features (e.g., [type hints]).
+
+[0.4]: https://pypi.org/project/simplestatistics/0.4.0/ "simplestatistics 0.4.0 on PyPI"
+[type hints]: https://docs.python.org/3/library/typing.html "Python 3 type hints documentation"
 
 <!-- TOC -->
 

@@ -1,0 +1,14 @@
+# Use CircleCLI 2.0 config syntax
+version: 2
+
+jobs:
+    build:
+        working_directory: ~/simplestatistics
+        docker:
+            - image: circleci/python:3.7
+        steps:
+            - checkout
+            - run:
+                command: |
+                    pip install --user coverage nose
+                    /home/circleci/.local/bin/nosetests --with-coverage --cover-package=simplestatistics --with-doctest
