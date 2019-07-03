@@ -38,7 +38,7 @@ class bayesian_classifier():
         >>> model2.train({'species': 'dog'}, 'animal')
         >>> model2.train({'species': 'cat'}, 'chair')
         >>> model2.score({'species': 'cat'})
-        [('chair', 0.25), ('animal', 0.25)]
+        [('animal', 0.25), ('chair', 0.25)]
         >>> model2.score({'species': 'dog'})
         [('animal', 0.5), ('chair', 0)]
 
