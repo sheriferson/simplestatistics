@@ -22,15 +22,21 @@ def sum(data): # pylint: disable=redefined-builtin
 
     Examples:
         >>> sum([1, 2, 3])
-        6.0
+        6
         >>> sum([-1, 0, 1])
-        0.0
+        0
         >>> sum([2.3, 0, -1.1])
         1.2
         >>> sum(4)
         4
         >>> sum((3, 2.5))
         5.5
+        >>> sum([1.00001, 1.00002])
+        2.0
+        >>> sum([1.0001, 1.0002])
+        2.0
+        >>> sum([1.001, 1.002])
+        2.003
         >>> sum('abc')
         Traceback (most recent call last):
             ...
