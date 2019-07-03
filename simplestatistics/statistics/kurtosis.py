@@ -5,7 +5,6 @@ Implements kurtosis() function.
 # I need sane division that returns a float not int
 from __future__ import division
 
-from .decimalize import decimalize
 from .mean import mean
 from .sum import sum # pylint: disable=redefined-builtin
 
@@ -61,7 +60,7 @@ def kurtosis(x):
         return(None)
 
     n = len(x)
-    mean_x = decimalize(mean(x))
+    mean_x = mean(x)
 
     s2 = sum([pow((value - mean_x), 2) for value in x])
     s4 = sum([pow((value - mean_x), 4) for value in x])
