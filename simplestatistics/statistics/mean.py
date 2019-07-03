@@ -7,6 +7,8 @@ from __future__ import division
 
 from .decimalize import decimalize
 
+import copy
+
 def mean(data):
     """
     The mean_, or *average*, is "the sum of values divided by the number of values".
@@ -35,5 +37,5 @@ def mean(data):
         >>> mean([-1, 0, 1, 2, 3])
         1.0
     """
-    data = decimalize(data)
+    data = decimalize(copy.deepcopy(data)) # don't modify the original data
     return float(sum(data) / len(data))
