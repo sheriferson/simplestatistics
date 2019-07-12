@@ -1,8 +1,9 @@
-_build/
+*.ipynb*
+*.pyc
+*.taskpaper
+.coverage
 .mypy_cache/
+_build/
 dist/
 htmlcov/
-*.pyc
-.coverage
-*.taskpaper
-*.ipynb*
+simplestatistics.egg-info/
