@@ -2,7 +2,9 @@
 Implements median() function.
 """
 
-def median(data):
+from typing import Union, List, Tuple
+
+def median(data: Union[int, float, List]) -> float:
     """
     The median_ is "the number separating the higher half of a data sample... from the lower half."
 
@@ -28,6 +30,8 @@ def median(data):
         -2.0
         >>> median(-3)
         -3.0
+        >>> median([2.5, 1.5])
+        2.0
         >>> median("90")
         Traceback (most recent call last):
             ...
