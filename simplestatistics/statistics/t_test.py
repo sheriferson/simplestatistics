@@ -2,7 +2,6 @@
 Implements t_test() function.
 """
 
-from .decimalize import decimalize
 from .mean import mean
 from .standard_deviation import standard_deviation
 
@@ -42,16 +41,13 @@ def t_test(sample, x):
         0.150570344262835
     """
 
-    sample = decimalize(sample)
-    x = decimalize(x)
-    mean_sample = decimalize(mean(sample))
+    mean_sample = mean(sample)
 
     # Square root the length of the sample
     rootN = pow(len(sample), 0.5)
-    rootN = decimalize(rootN)
 
     # get standard deviation of sample
-    sample_sd = decimalize(standard_deviation(sample))
+    sample_sd = standard_deviation(sample)
 
     # Compute the known value against the sample,
     # returning the t value
