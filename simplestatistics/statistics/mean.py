@@ -2,9 +2,6 @@
 Implements mean() function.
 """
 
-# I need sane division that returns a float not int
-from __future__ import division
-
 from .decimalize import decimalize
 
 import copy

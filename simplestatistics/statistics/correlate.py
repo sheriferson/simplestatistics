@@ -2,9 +2,6 @@
 Implements correlate() function.
 """
 
-# I need sane division that returns a float not int
-from __future__ import division
-
 from .z_scores import z_scores
 from .product import product
 from .sum import sum # pylint: disable=redefined-builtin

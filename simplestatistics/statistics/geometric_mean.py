@@ -2,13 +2,8 @@
 Implements geometric_mean() function.
 """
 
-# I need sane division that returns a float not int
-from __future__ import division
-
-# Are you trying to use python3?
-# if yes, reduce is now in functools
+# Python 3: reduce is now in functools
 # ref: http://stackoverflow.com/questions/8689184/python-name-reduce-is-not-defined
-# instead of using an if statement, I'll just import reduce from functools anyway
 from functools import reduce
 
 # geometric mean

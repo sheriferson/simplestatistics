@@ -2,9 +2,6 @@
 Implements median() function.
 """
 
-# I need sane division that returns a float not int
-from __future__ import division
-
 def median(data):
     """
     The median_ is "the number separating the higher half of a data sample... from the lower half."

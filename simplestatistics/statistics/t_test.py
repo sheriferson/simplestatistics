@@ -2,9 +2,6 @@
 Implements t_test() function.
 """
 
-# I need sane division that returns a float not int
-from __future__ import division
-
 from .decimalize import decimalize
 from .mean import mean
 from .standard_deviation import standard_deviation

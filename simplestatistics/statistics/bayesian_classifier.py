@@ -2,9 +2,6 @@
 Implements bayesian_classifier().
 """
 
-# I need sane division that returns a float not int
-from __future__ import division
-
 class bayesian_classifier():
     """
     A `naive Bayesian classifier`_.

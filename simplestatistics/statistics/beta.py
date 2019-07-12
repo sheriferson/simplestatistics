@@ -2,9 +2,6 @@
 Implements beta() distribution function.
 """
 
-# I need sane division that returns a float not int
-from __future__ import division
-
 from .gamma_function import gamma_function
 
 def calculate_beta_pdf(x, _alpha, _beta):

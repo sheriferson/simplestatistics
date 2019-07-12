@@ -2,9 +2,6 @@
 Implements variance() function.
 """
 
-# I need sane division that returns a float not int
-from __future__ import division
-
 from .mean import mean
 from .decimalize import decimalize
 

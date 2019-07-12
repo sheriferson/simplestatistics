@@ -2,9 +2,6 @@
 Implements normal() function with norm_single_calculation() helper function.
 """
 
-# I need sane division that returns a float not int
-from __future__ import division
-
 import math
 
 def norm_single_calculation(x, mean, standard_deviation):
