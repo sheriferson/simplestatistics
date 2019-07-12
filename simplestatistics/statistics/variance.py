@@ -3,7 +3,6 @@ Implements variance() function.
 """
 
 from .mean import mean
-from .decimalize import decimalize
 
 def variance(data, sample=True):
     """
@@ -35,8 +34,7 @@ def variance(data, sample=True):
     if len(data) < 2:
         return(None)
 
-    data = decimalize(data)
-    m = decimalize(mean(data))
+    m = mean(data)
     if sample: # pylint: disable=no-else-return
         return(float(sum([pow(x - m, 2) for x in data]) / (len(data) - 1)))
     else:
