@@ -2,7 +2,9 @@
 Implements mode() function.
 """
 
-def mode(data):
+from typing import Union, List, Tuple
+
+def mode(data: Union[int, List]) -> Union[int, List]:
     """
     The mode_ is "the value that appears most often in a set of data."
 
