@@ -11,4 +11,4 @@ jobs:
             - run:
                 command: |
                     pip install --user pytest-cov
-                    /home/circleci/.local/bin/pytest simplestatistics --doctest-modules --cov=simplestatistics
+                    /home/circleci/.local/bin/pytest simplestatistics --doctest-modules --cov=simplestatistics --cov-report=xml
