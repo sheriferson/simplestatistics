@@ -38,7 +38,7 @@ pip install git+https://github.com/sheriferson/simplestatistics
 >>> ss.mean([1, 2, 3])
 2.0
 >>> ss.t_test([1, 2, 2.4, 3, 0.9], 2)
--0.3461277235039042
+-0.3461277235039039
 ```
 
 ## Documentation
@@ -57,19 +57,12 @@ Documentation will be generated in `_build/html/`.
 
 ## Tests
 
-If you want coverage reports, you need to have [`coverage`](https://pypi.python.org/pypi/coverage) installed:
+To run all doctests and see test coverage:
 
 ```bash
-pip install coverage
-nosetests --with-coverage --cover-package=simplestatistics --with-doctest
+pip install -r requirements.txt
+pytest simplestatistics --doctest-modules --cov=simplestatistics
 ```
-
-Otherwise, to just run the tests:
-
-```bash
-nosetests --with-doctest
-```
-
 The code adheres to [PEP8] guidelines except for the following checkers:
 
 - `invalid-name`
