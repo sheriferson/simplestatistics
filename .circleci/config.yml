@@ -10,5 +10,5 @@ jobs:
             - checkout
             - run:
                 command: |
-                    pip install --user coverage nose
-                    /home/circleci/.local/bin/nosetests --with-coverage --cover-package=simplestatistics --with-doctest
+                    pip install --user pytest-cov
+                    /home/circleci/.local/bin/pytest simplestatistics --doctest-modules --cov=simplestatistics

@@ -35,7 +35,7 @@ Usage
     >>> ss.mean([1, 2, 3])
     2.0
     >>> ss.t_test([1, 2, 2.4, 3, 0.9], 2)
-    -0.3461277235039042
+    -0.3461277235039039
 
 Documentation
 -------------
@@ -55,19 +55,12 @@ Documentation will be generated in ``_build/html/``.
 Tests
 -----
 
-If you want coverage reports, you need to have
-```coverage`` <https://pypi.python.org/pypi/coverage>`__ installed:
+To run all doctests and see test coverage:
 
 .. code:: bash
 
-    pip install coverage
-    nosetests --with-coverage --cover-package=simplestatistics --with-doctest
-
-Otherwise, to just run the tests:
-
-.. code:: bash
-
-    nosetests --with-doctest
+    pip3 install -r requirements.txt
+    pytest simplestatistics --doctest-modules --cov=simplestatistics
 
 The code adheres to `PEP8 <https://www.python.org/dev/peps/pep-0008/>`__ guidelines except for the
 following checkers:
